@@ -36,14 +36,14 @@ def main():
     row1[2].link_button(":computer: :green[GitHub]", url="https://github.com/alisterbaroi", help="github.com/alisterbaroi", use_container_width=True)
   st.divider()
 
-#   # Summary Section
-#   st.subheader("Summary", anchor=False)
-#   st.markdown(""" 
-# - 3+ years experience,
-# - 👔 Lead Cloud Architect (current job),
-# - 🏆 Computer Science (Honours) graduate from Taylors University (Malaysia),
-#   - 🔥 Majored in AI & minored in FinTech,
-# """)
+  # Summary Section
+  st.subheader("Summary", anchor=False)
+  st.markdown(""" 
+- About 3+ years of relavant work experience,
+- 👔 Lead Cloud Architect (current job),
+- 🏆 Computer Science (Honours) graduate from Taylors University (Malaysia),
+  - 🔥 Majored in AI & minored in FinTech,
+""")
 
   # Skills Section
   st.subheader("Skills", anchor=False)
