@@ -82,6 +82,7 @@ def main():
       st.write("""
               - Created AI-driven APIs and systems to streamline the automated workflows which significantly increased company's internal efficiency,
               - Built different backend microservices to connect with Google Cloud to perform variety automations for the company's internal and external operations
+              - Designed, implimented, and maintained CI/CD pipelines.
                """)
     with st.container(border=True):
       jobcol = st.columns([1.5, 1.5, 1]) 
@@ -89,8 +90,9 @@ def main():
       jobcol[1].write(":grey[London, England, UK (Remote)]")
       jobcol[2].write(":grey[*Mar 2024 - Present*]")
       st.write("""
-              - Acquired Google Cloud :green[Startup Funding] as Cloud Credits to enable the company to access Google Cloud for two years at no cost.
-              - Did R&D on designing, implementing, and overseeing the :green[cloud infrastructure] of the company.
+              - Acquired Google Cloud :green[Startup Funding] as Cloud Credits to enable the company to access Google Cloud for two years at no cost,
+              - Did R&D on designing, implementing, and overseeing the :green[cloud infrastructure] of the company,
+              - Designed, implimented, and maintained CI/CD pipelines.
                """)
   
   with st.expander("Kambyan Network :gray[(*Aug 2022 - Jun 2023*)]"):
@@ -101,10 +103,10 @@ def main():
         jobcol[1].write(":grey[Petaling Jaya, KL, Malaysia]")
         jobcol[2].write(":grey[*Aug 2022 - Jun 2023*]")
         st.write("""
-              - Designed, built and monitored the CI/CD pipeline which reduced the company’s code-to-production interval from 1 hour to 4 minutes,
+              - Designed, built and monitored the CI/CD pipeline which reduced the company's code-to-production interval from 1 hour to 4 minutes,
               - Monitored, analyzed, and optimized the cloud infrastructure which resulted in a 65% reduction of the daily cloud operations cost,
               - Designed the microservice architecture, its integration with the cloud, and compliance with the SDLC and Cloud Standards,
-              - Designed, implemented, and oversaw the VPC network and the company’s cloud infrastructure.
+              - Designed, implemented, and oversaw the VPC network and the company's cloud infrastructure.
                """)
   
   with st.expander("Google Developers Student Club at Taylor's University :gray[(*Oct 2021 - Oct 2022*)]"):
@@ -120,7 +122,43 @@ def main():
                """)
   st.markdown("To see the full list of my work experience (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/experience/)", unsafe_allow_html=True)
 
-
+  # Education Section
+  st.header("Education", anchor=False)
+  with st.expander("Backelor of Computer Science (Hons) :gray[(*Aug 2020 - Aug 2023*)]"):
+      with st.container(border=True):
+        jobcol = st.columns([1.5, 1.5, 1]) 
+        jobcol[0].write(":blue[Backelor of Computer Science (Hons)]")
+        jobcol[1].write(":grey[Taylor' University - Selangor, Malaysia]")
+        jobcol[2].write(":grey[*Aug 2020 - Aug 2023*]")
+        st.write("""
+              - Major/specilization in :green[Artificial Intelligence] (AI)
+              - Minor in :green[Financial Technology] (FinTech)
+              - CGPA: :green[3.54/4.0]
+              - Achieved multiple Deans List letters of recommendation 
+              - Received "Taylor's Excellence Award Scholarship" from outstanding performance during Foundation program
+               """)
+  
+      with st.container(border=True):
+        jobcol = st.columns([1.5, 1.5, 1]) 
+        jobcol[0].write(":blue[Backelor of Science in Computer Science (Hons)]")
+        jobcol[1].write(":grey[University of the West of England (UWE) - Bristol, UK]")
+        jobcol[2].write(":grey[*Aug 2020 - Aug 2023*]")
+        st.write("""
+              - Dual award program with Taylor's University  
+              - CGPA: :green[3.54/4.0]
+               """)
+  with st.expander("Foundation in Computing :gray[(*Aug 2019 - Aug 2020*)]"):
+    with st.container(border=True):
+        jobcol = st.columns([1.5, 1.5, 1]) 
+        jobcol[0].write(":blue[Foundation in Computing]")
+        jobcol[1].write(":grey[Taylor' College - Selangor, Malaysia]")
+        jobcol[2].write(":grey[*Aug 2019 - Aug 2020*]")
+        st.write("""
+              - Achieved :green[Deans List] letters of recommendation
+              - Minor in Financial Technology (FinTech)  
+              - CGPA: :green[3.44/4.0]
+               """)
+  
 
 
 
