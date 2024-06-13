@@ -11,15 +11,17 @@ def main():
   with open("./styles/main.css", "rb") as s:
     st.markdown("<style>{}</style>".format(s.read()), unsafe_allow_html=True)
 
-  row0 = st.columns([2,4], gap="small")
+  row0 = st.columns([2,4], gap="medium")
 
   # Hero Section
   with row0[0]:
-     st.image("./assets/profile-pic (1).png", width=220)
+     st.image("./assets/profile-pic (1).png", width=230)
      
   with row0[1]:
-    st.title("Alister Animesh Baroi", anchor=False)
-    st.write("Cloud Architect, DevOps Engineer, AI Engineer, Backend Engineer.")
+    st.header("Alister Animesh Baroi", anchor=False)
+    st.write(""":blue[Cloud Architect, DevOps Engineer, AI Engineer, Backend Engineer]
+             *Driving business through with AI-powered workflows & cloud-based solutions*
+              """)
     with open("./assets/Alister_Baroi_Resume.pdf", "rb") as file:
       st.download_button(":page_facing_up: Download Resume", type="primary", data=file, file_name="Alister_Baroi_Resume.pdf", mime="application/pdf")
 
@@ -34,7 +36,7 @@ def main():
   st.divider()
 
   # Summary Section
-  st.header("Summary", anchor=False)
+  st.subheader("Summary", anchor=False)
   st.markdown(""" 
 - 3+ years experience,
 - 👔 Lead Cloud Architect (current job),
@@ -43,7 +45,7 @@ def main():
 """)
 
   # Skills Section
-  st.header("Skills", anchor=False)
+  st.subheader("Skills", anchor=False)
   with st.expander("Hard skills"):
     st.multiselect(
       "Programming Languages",
@@ -72,7 +74,7 @@ def main():
       ["Python", "JavaScript", "Git", "YAML", "SQL", "PHP",  "C++", "Java", "Bash", "PowerShell", "HTML", "CSS"], disabled=False, label_visibility="collapsed")
   
   # Experience Section
-  st.header("Experience", anchor=False)
+  st.subheader("Experience", anchor=False)
   with st.expander("Read Global Consultants :gray[(*Oct 2023 - Present*)]"):
     with st.container(border=True):
       jobcol = st.columns([1.5, 1.5, 1]) 
@@ -123,28 +125,27 @@ def main():
   st.markdown("To see the full list of my work experience (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/experience/)", unsafe_allow_html=True)
 
   # Education Section
-  st.header("Education", anchor=False)
-  with st.expander("Backelor of Computer Science (Hons) :gray[(*Aug 2020 - Aug 2023*)]"):
+  st.subheader("Education", anchor=False)
+  with st.expander("Bachelor of Computer Science (Hons) :gray[(*Aug 2020 - Aug 2023*)]"):
       with st.container(border=True):
         jobcol = st.columns([1.5, 1.5, 1]) 
-        jobcol[0].write(":blue[Backelor of Computer Science (Hons)]")
+        jobcol[0].write(":blue[Bachelor of Computer Science (Hons)]")
         jobcol[1].write(":grey[Taylor' University - Selangor, Malaysia]")
         jobcol[2].write(":grey[*Aug 2020 - Aug 2023*]")
         st.write("""
-              - Major/specilization in :green[Artificial Intelligence] (AI)
-              - Minor in :green[Financial Technology] (FinTech)
-              - CGPA: :green[3.54/4.0]
-              - Achieved multiple Deans List letters of recommendation 
-              - Received "Taylor's Excellence Award Scholarship" from outstanding performance during Foundation program
-               """)
+              - Major/specilization in :green[Artificial Intelligence] (AI),
+              - Minor in :green[Financial Technology] (FinTech),
+              - CGPA: :green[3.54/4.0],
+              - Achievements: :green[Deans List] letters of recommendation, :green[Taylor's SHINE Gold Award], :green[Taylor's Excellence Award Scholarship] 
+                 """)
   
       with st.container(border=True):
         jobcol = st.columns([1.5, 1.5, 1]) 
-        jobcol[0].write(":blue[Backelor of Science in Computer Science (Hons)]")
+        jobcol[0].write(":blue[Bachelor of Science in Computer Science (Hons)]")
         jobcol[1].write(":grey[University of the West of England (UWE) - Bristol, UK]")
         jobcol[2].write(":grey[*Aug 2020 - Aug 2023*]")
         st.write("""
-              - Dual award program with Taylor's University  
+              - Dual award program with Taylor's University,  
               - CGPA: :green[3.54/4.0]
                """)
   with st.expander("Foundation in Computing :gray[(*Aug 2019 - Aug 2020*)]"):
@@ -153,10 +154,31 @@ def main():
         jobcol[0].write(":blue[Foundation in Computing]")
         jobcol[1].write(":grey[Taylor' College - Selangor, Malaysia]")
         jobcol[2].write(":grey[*Aug 2019 - Aug 2020*]")
+        st.write("""  
+              - CGPA: :green[3.44/4.0],
+              - Achievements: :green[Deans List] letters of recommendation
+               """)
+  
+  with st.expander("A Levels :gray[(*June 2016 - June 2018*)]"):
+    with st.container(border=True):
+        jobcol = st.columns([1.5, 1.5, 1]) 
+        jobcol[0].write(":blue[Cambridge Advanced Levels]")
+        jobcol[1].write(":grey[British Council Bangladesh - Dhaka, Bangladesh]")
+        jobcol[2].write(":grey[*June 2016 - June 2018*]")
         st.write("""
-              - Achieved :green[Deans List] letters of recommendation
-              - Minor in Financial Technology (FinTech)  
-              - CGPA: :green[3.44/4.0]
+              - :green[Subjects:] Physics, Chemistry, Mathematics, 
+              - :green[Reg. Type:] Private Student 
+               """)
+  
+  with st.expander("O Levels :gray[(*June 2014 - Jun 2015*)]"):
+    with st.container(border=True):
+        jobcol = st.columns([1.5, 1.5, 1]) 
+        jobcol[0].write(":blue[Cambridge Ordinary Levels]")
+        jobcol[1].write(":grey[Bacha English Medium School (BEMS) - Dhaka, Bangladesh]")
+        jobcol[2].write(":grey[*June 2014 - Jun 2015*]")
+        st.write("""
+              - :green[Subjects:] English Language, Mathematics, Chemistry, Physics, Bengali, Geography, 
+              - :green[Reg. Type:] School Student
                """)
   
 
