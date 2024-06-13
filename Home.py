@@ -81,7 +81,7 @@ def main():
       jobcol[2].write(":gray[*Mar 2024 - Present*]")
       st.write("""
               - Created AI-driven APIs and systems to streamline the automated workflows which significantly increased company's internal efficiency,
-              - Created different microservices to connect with Google Cloud to perform variety automations for the company's internal and external operations
+              - Built different backend microservices to connect with Google Cloud to perform variety automations for the company's internal and external operations
                """)
     with st.container(border=True):
       jobcol = st.columns([1.5, 1.5, 1]) 
