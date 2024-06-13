@@ -7,6 +7,20 @@ st.set_page_config(
 def main():
   st.title("My Projects")
 
+  # Dark mode
+  with st.sidebar:
+    if st.toggle("Dark Mode", value=True) is False:
+      st._config.set_option(f'theme.base', "light")
+    else:
+      st._config.set_option(f'theme.base', "dark")
+
+    # Clear button  
+    if st.button("Clear Session", help="Clears session, cache, and cookie data", use_container_width=True):
+      st.cache_data.clear()
+      st.session_state.clear()
+      st.cache_resource.clear()
+      st.rerun()
+
 
 
 if __name__ == "__main__":

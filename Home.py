@@ -1,15 +1,30 @@
 import streamlit as st
 
-
+st._config.set_option(f'theme.base' ,"dark")
+st.set_page_config(page_title="Alister Animesh Baroi - Resume", page_icon=":page_facing_up:", layout="centered")
 
 def main():
-  st.set_page_config(
-    page_title="Alister Animesh Baroi - Resume", page_icon=":page_facing_up:", layout="centered"
-)
+
+  # Dark mode
+  with st.sidebar:
+    if st.toggle("Dark Mode", value=True) is False:
+      st._config.set_option(f'theme.base', "light")
+    else:
+      st._config.set_option(f'theme.base', "dark")
+
+    # Clear button  
+    if st.button("Clear Session", help="Clears session, cache, and cookie data", use_container_width=True):
+      st.cache_data.clear()
+      st.session_state.clear()
+      st.cache_resource.clear()
+      st.rerun()
+
 
   # Load css file
   with open("./styles/main.css", "rb") as s:
     st.markdown("<style>{}</style>".format(s.read()), unsafe_allow_html=True)
+
+  
 
   row0 = st.columns([2,4], gap="medium")
 
@@ -184,8 +199,10 @@ def main():
               - :green[Subjects:] English Language, Mathematics, Chemistry, Physics, Bengali, Geography, 
               - :green[Reg. Type:] School Student
                """)
-  
 
+def mode_set(item):
+  st.session_state['themebutton'] = item
+  # st.rerun()
 
 
 
