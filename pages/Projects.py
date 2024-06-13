@@ -1,7 +1,8 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="My Projects", page_icon=":page_facing_up:", layout="wide"
+    page_title="My Projects", page_icon=":page_facing_up:", layout="centered", initial_sidebar_state="expanded", 
+    # menu_items=None
 )
 
 def main():

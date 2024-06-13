@@ -1,7 +1,14 @@
 import streamlit as st
 
 st._config.set_option(f'theme.base' ,"dark")
-st.set_page_config(page_title="Alister Animesh Baroi - Resume", page_icon=":page_facing_up:", layout="centered")
+st.set_page_config(
+    page_title="My Projects", page_icon=":page_facing_up:", layout="centered", 
+    # menu_items={
+    #     'Get Help': None,
+    #     'Report a bug': None,
+    #     'About': None
+    # }
+)
 
 def main():
 
