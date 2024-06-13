@@ -19,8 +19,9 @@ def main():
      
   with row0[1]:
     st.header("Alister Animesh Baroi", anchor=False)
-    st.write(""":blue[Cloud Architect, DevOps Engineer, AI Engineer, Backend Engineer]
-             *Driving business through with AI-powered workflows & cloud-based solutions*
+    st.write("""
+             :blue[Cloud Architect, DevOps Engineer, AI Engineer, Backend Engineer]
+             *Driving business success with AI-powered workflows & cloud solutions*
               """)
     with open("./assets/Alister_Baroi_Resume.pdf", "rb") as file:
       st.download_button(":page_facing_up: Download Resume", type="primary", data=file, file_name="Alister_Baroi_Resume.pdf", mime="application/pdf")
@@ -35,37 +36,40 @@ def main():
     row1[2].link_button(":computer: :green[GitHub]", url="https://github.com/alisterbaroi", help="github.com/alisterbaroi", use_container_width=True)
   st.divider()
 
-  # Summary Section
-  st.subheader("Summary", anchor=False)
-  st.markdown(""" 
-- 3+ years experience,
-- 👔 Lead Cloud Architect (current job),
-- 🏆 Computer Science (Honours) graduate from Taylors University (Malaysia),
-  - 🔥 Majored in AI & minored in FinTech,
-""")
+#   # Summary Section
+#   st.subheader("Summary", anchor=False)
+#   st.markdown(""" 
+# - 3+ years experience,
+# - 👔 Lead Cloud Architect (current job),
+# - 🏆 Computer Science (Honours) graduate from Taylors University (Malaysia),
+#   - 🔥 Majored in AI & minored in FinTech,
+# """)
 
   # Skills Section
   st.subheader("Skills", anchor=False)
-  with st.expander("Hard skills"):
+  with st.expander("Programming Languages"):
     st.multiselect(
       "Programming Languages",
-      ["Python", "JavaScript", "Git", "YAML", "SQL", "PHP",  "C++", "Java", "Bash", "PowerShell", "HTML", "CSS"],
-      ["Python", "JavaScript", "Git", "YAML", "SQL", "PHP",  "C++", "Java", "Bash", "PowerShell", "HTML", "CSS"], disabled=False, label_visibility="visible")
-    
+      ["Python", "JavaScript", "Git", "YAML", "HCL", "SQL", "PHP",  "C++", "Java", "Bash", "PowerShell", "HTML", "CSS"],
+      ["Python", "JavaScript", "Git", "YAML", "HCL", "SQL", "PHP",  "C++", "Java", "Bash", "PowerShell", "HTML", "CSS"], disabled=False, label_visibility="collapsed")
+  
+  with st.expander("Frameworks & Libraries"):  
     st.multiselect(
       "Frameworks & Libraries",
-      ["FastAPI", "Streamlit", "Docker", "Next.js", "Django", "Keras", "Seaborn", "Anaconda", "TensoFlow", "Scikit-learn", "Matplotlib", "React Native"],
-      ["FastAPI", "Streamlit", "Docker", "Next.js", "Django", "Keras", "Seaborn", "Anaconda", "TensoFlow", "Scikit-learn", "Matplotlib", "React Native"], disabled=False, label_visibility="visible")
+      ["FastAPI", "Streamlit", "Docker", "Terraform", "Django", "Seaborn", "Keras", "Next.js", "Anaconda", "TensoFlow", "Scikit-learn", "Matplotlib", "React Native"],
+      ["FastAPI", "Streamlit", "Docker", "Terraform", "Django", "Seaborn", "Keras", "Next.js", "Anaconda", "TensoFlow", "Scikit-learn", "Matplotlib", "React Native"], disabled=False, label_visibility="collapsed")
     
+  with st.expander("Platforms & Tools"):  
     st.multiselect(
       "Platforms & Tools",
       ["Google Cloud", "GitHub", "GitHub Actions", "Docker", "Linux", "Figma", "MySQL", "PostgreSQL", "Google Colab", "Jupyter Notebooks"],
-      ["Google Cloud", "GitHub", "GitHub Actions", "Docker", "Linux", "Figma", "MySQL", "PostgreSQL", "Google Colab", "Jupyter Notebooks"], disabled=False, label_visibility="visible")
-
+      ["Google Cloud", "GitHub", "GitHub Actions", "Docker", "Linux", "Figma", "MySQL", "PostgreSQL", "Google Colab", "Jupyter Notebooks"], disabled=False, label_visibility="collapsed")
+  
+  with st.expander("Technology Concepts"):  
     st.multiselect(
       "Technology Concepts",
       ["Microservices", "DevOps", "CI/CD", "AI", "Backend", "Data Anaalysis", "Data Science", "Machine Learning", "Software Architecture", "Frontend"],
-      ["Microservices", "DevOps", "CI/CD", "AI", "Backend", "Data Anaalysis", "Data Science", "Machine Learning", "Software Architecture", "Frontend"], disabled=False, label_visibility="visible")
+      ["Microservices", "DevOps", "CI/CD", "AI", "Backend", "Data Anaalysis", "Data Science", "Machine Learning", "Software Architecture", "Frontend"], disabled=False, label_visibility="collapsed")
 
   with st.expander("Soft skills"):
     st.multiselect(
