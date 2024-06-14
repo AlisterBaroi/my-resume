@@ -9,9 +9,15 @@ st.set_page_config(
     #     'About': None
     # }
 )
+st.markdown("<style>.st-emotion-cache-13ln4jf{@media only screen and (max-width: 800px) {.st-emotion-cache-13ln4jf{width: 100%; margin: 0;padding: 0 0 0 0;max-width: 100vw;}}}</style>", unsafe_allow_html=True)
+#     # Load css file
+# with open("./styles/main.css", "rb") as f:
+#   css = f.read()
+# st.markdown("<style>{css}</style>", unsafe_allow_html=True)
+
+
 
 def main():
-
   # Dark mode
   with st.sidebar:
     if st.toggle("Dark Mode", value=True) is False:
@@ -25,13 +31,6 @@ def main():
       st.session_state.clear()
       st.cache_resource.clear()
       st.rerun()
-
-
-  # Load css file
-  with open("./styles/main.css", "rb") as s:
-    st.markdown("<style>{}</style>".format(s.read()), unsafe_allow_html=True)
-
-  
 
   row0 = st.columns([2,4], gap="medium")
 
@@ -56,6 +55,8 @@ def main():
     # row1[1].link_button(":red[:globe_with_meridians: Website]", url="https://alisterbaroi.streamlit.io", help="alisterbaroi.streamlit.io", use_container_width=True)
     row1[1].link_button(":blue-background[in] :blue[LinkedIn]", url="https://www.linkedin.com/in/alisterbaroi", help="linkedin.com/in/alisterbaroi", use_container_width=True)
     row1[2].link_button(":computer: :green[GitHub]", url="https://github.com/alisterbaroi", help="github.com/alisterbaroi", use_container_width=True)
+
+  st.markdown("<style>hr{margin: 0;}</style>", unsafe_allow_html=True)
   st.divider()
 
   # Summary Section
@@ -100,7 +101,7 @@ def main():
       ["Python", "JavaScript", "Git", "YAML", "SQL", "PHP",  "C++", "Java", "Bash", "PowerShell", "HTML", "CSS"], disabled=False, label_visibility="collapsed")
   
   # Experience Section
-  st.subheader("Experience", anchor=False)
+  st.subheader("Relavant Experience", anchor=False)
   with st.expander("Read Global Consultants :gray[(*Oct 2023 - Present*)]"):
     with st.container(border=True):
       jobcol = st.columns([1.5, 1.5, 1]) 
@@ -207,9 +208,78 @@ def main():
               - :green[Reg. Type:] School Student
                """)
 
-def mode_set(item):
-  st.session_state['themebutton'] = item
-  # st.rerun()
+
+  # Projects Section
+  st.subheader("Recent Projects", anchor=False)
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    jobcol[0].write("Resume Parser API")
+    jobcol[1].write(":gray[A simple API to accept post requests with resume files & send back the parsed data as JSON]")
+    jobcol[2].link_button(":red[View Project]", url="Projects#my-projects", use_container_width=True)
+  
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    jobcol[0].write("Cat & Dog Classifier")
+    jobcol[1].write(":gray[A simple app based on a custom-made AI model to distinguish between cats & dogs]")
+    jobcol[2].link_button(":red[View Project]", url="Projects#my-projects", use_container_width=True)
+
+  st.page_link("pages/Projects.py", label="To see the list of all my projects in details visit :blue[projects page]")
+
+  # Achievements Section
+  st.subheader("Achievements", anchor=False)
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2])
+    a = {"award": "Taylor's SHINE Gold Award", "type":"Recognition", "date":"08/2023", "from":"Taylor's University", "des":"Taylor's recognition of my outstanding extracurricular activities e.g. hackathons & certifications", "link":"https://google.com"} 
+    jobcol[0].write(a["award"])
+    jobcol[1].write(":gray[Taylor's recognition of my :green[outstanding extracurricular activities] e.g. hackathons & certifications]")
+    if jobcol[2].button(":red[Details]", use_container_width=True, key="SHINE"):
+      achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
+  
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    a = {"award": "2nd Prize Winner", "type":"Competition", "date":"04/2022", "from":"Microsoft, FOSSASIA", "des":"Placed 2nd out of 2568 contestants, 797 finalists on FOSSASIA Cloud Skills Challenge 2022, a global competition hosted by Microsoft and FOSSASIA", "link":"https://www.linkedin.com/feed/update/urn:li:activity:6918520785208762368/"} 
+    jobcol[0].write(a["award"])
+    jobcol[1].write(":gray[Out of 2568 contestants, 797 finalists on :green[FOSSASIA Cloud Skills Challenge 2022], by Microsoft & FOSSASIA]")
+    if jobcol[2].button(":red[Details]", use_container_width=True, key="FOSSASIA"):
+      achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
+  
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    a = {"award": "4th Place", "type":"Competition", "date":"06/2021", "from":"Taylor's University", "des":"Ranked 4th out of 73 contestants at ImagineHack2021 hackathon, a coding competition hosted by Taylor's University", "link":"https://drive.google.com/file/u/1/d/1oA8pHIJU8iYBtqyHCfHs_-Qm7p92JnWp/view"}
+    jobcol[0].write(a["award"])
+    jobcol[1].write(":gray[Ranked 4th out of 73 contestants at :green[ImagineHack2021 hackathon], by Taylor's University]")
+    if jobcol[2].button(":red[Details]", use_container_width=True, key="ImagineHack2021"):
+      achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
+  
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    a = {"award": "Taylor's Excellence Award", "type":"Scholarship", "date":"08/2020", "from":"Taylor's University", "des":"Got the Taylor's Excellence Award scholarship for my Bachelor program from exceptional performance during foundations", "link":None}
+    jobcol[0].write(a["award"])
+    jobcol[1].write(":gray[Got this :green[scholarship] for my Bachelor program from exceptional performance during foundations]")
+    if jobcol[2].button(":red[Details]", use_container_width=True, key="Excellence"):
+      achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
+
+  st.markdown("To see the full list of my achieveements (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
+
+
+@st.experimental_dialog("Achievement", width="small")
+def achievements(item, item2, item3, item4, item5, item6):
+    st.write(f""":green[Award:]   
+                 {item}""")
+    details = st.columns([1, 1, 1])
+    details[0].write(f""":green[Type:]   
+                     {item2}""")
+    details[1].write(f""":green[Date:]   
+                     {item3}""")
+    details[2].write(f""" :green[From:]   
+                     {item4}""")
+    st.write(f""":green[Description:]   
+             {item5}""")
+    if item6 is None:
+      if st.button("Close"):
+        st.rerun()
+    else:
+      st.link_button(":red[View Achievement ➚]", url=item6, use_container_width=False)
 
 
 
