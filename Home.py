@@ -259,7 +259,7 @@ def main():
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="Excellence"):
       achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
 
-  st.markdown("To see the full list of my achieveements (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
+  st.markdown("To see the full list of my achievement (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
 
 
 @st.experimental_dialog("Achievement", width="small")
