@@ -214,14 +214,14 @@ def main():
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
     jobcol[0].write("Resume Parser API")
-    jobcol[1].write(":gray[A simple API to accept post requests with resume files & send back the parsed data as JSON]")
-    jobcol[2].link_button(":red[View Project ➚]", url="Projects#my-projects", use_container_width=True)
+    jobcol[1].write(":gray[API to accept resume files, process with computer vision & LLM, & send back the parsed data as JSON]")
+    jobcol[2].link_button(":red[View Project ➚]", url="https://resume-parser-api-2otwbg7hbq-nw.a.run.app/docs", use_container_width=True)
   
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
     jobcol[0].write("Cat & Dog Classifier")
-    jobcol[1].write(":gray[A simple app based on a custom-made AI model to distinguish between cats & dogs]")
-    jobcol[2].link_button(":red[View Project ➚]", url="Projects#my-projects", use_container_width=True)
+    jobcol[1].write(":gray[A simple app build on top of my custom-made AI model to distinguish between cats & dogs]")
+    jobcol[2].link_button(":red[View Project ➚]", url="https://cat-and-dog-classifier-5b4x24knra-uc.a.run.app/", use_container_width=True)
 
   st.page_link("pages/Projects.py", label="To see the list of all my projects in details visit :blue[projects page]")
 
