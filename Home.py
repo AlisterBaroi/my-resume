@@ -215,13 +215,13 @@ def main():
     jobcol = st.columns([2, 5, 2]) 
     jobcol[0].write("Resume Parser API")
     jobcol[1].write(":gray[A simple API to accept post requests with resume files & send back the parsed data as JSON]")
-    jobcol[2].link_button(":red[View Project]", url="Projects#my-projects", use_container_width=True)
+    jobcol[2].link_button(":red[View Project ➚]", url="Projects#my-projects", use_container_width=True)
   
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
     jobcol[0].write("Cat & Dog Classifier")
     jobcol[1].write(":gray[A simple app based on a custom-made AI model to distinguish between cats & dogs]")
-    jobcol[2].link_button(":red[View Project]", url="Projects#my-projects", use_container_width=True)
+    jobcol[2].link_button(":red[View Project ➚]", url="Projects#my-projects", use_container_width=True)
 
   st.page_link("pages/Projects.py", label="To see the list of all my projects in details visit :blue[projects page]")
 
@@ -232,7 +232,7 @@ def main():
     a = {"award": "Taylor's SHINE Gold Award", "type":"Recognition", "date":"08/2023", "from":"Taylor's University", "des":"Taylor's recognition of my outstanding extracurricular activities e.g. hackathons & certifications", "link":"https://google.com"} 
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Taylor's recognition of my :green[outstanding extracurricular activities] e.g. hackathons & certifications]")
-    if jobcol[2].button(":red[Details]", use_container_width=True, key="SHINE"):
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="SHINE"):
       achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
   
   with st.container(border=True):
@@ -240,7 +240,7 @@ def main():
     a = {"award": "2nd Prize Winner", "type":"Competition", "date":"04/2022", "from":"Microsoft, FOSSASIA", "des":"Placed 2nd out of 2568 contestants, 797 finalists on FOSSASIA Cloud Skills Challenge 2022, a global competition hosted by Microsoft and FOSSASIA", "link":"https://www.linkedin.com/feed/update/urn:li:activity:6918520785208762368/"} 
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Out of 2568 contestants, 797 finalists on :green[FOSSASIA Cloud Skills Challenge 2022], by Microsoft & FOSSASIA]")
-    if jobcol[2].button(":red[Details]", use_container_width=True, key="FOSSASIA"):
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="FOSSASIA"):
       achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
   
   with st.container(border=True):
@@ -248,7 +248,7 @@ def main():
     a = {"award": "4th Place", "type":"Competition", "date":"06/2021", "from":"Taylor's University", "des":"Ranked 4th out of 73 contestants at ImagineHack2021 hackathon, a coding competition hosted by Taylor's University", "link":"https://drive.google.com/file/u/1/d/1oA8pHIJU8iYBtqyHCfHs_-Qm7p92JnWp/view"}
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Ranked 4th out of 73 contestants at :green[ImagineHack2021 hackathon], by Taylor's University]")
-    if jobcol[2].button(":red[Details]", use_container_width=True, key="ImagineHack2021"):
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="ImagineHack2021"):
       achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
   
   with st.container(border=True):
@@ -256,7 +256,7 @@ def main():
     a = {"award": "Taylor's Excellence Award", "type":"Scholarship", "date":"08/2020", "from":"Taylor's University", "des":"Got the Taylor's Excellence Award scholarship for my Bachelor program from exceptional performance during foundations", "link":None}
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Got this :green[scholarship] for my Bachelor program from exceptional performance during foundations]")
-    if jobcol[2].button(":red[Details]", use_container_width=True, key="Excellence"):
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="Excellence"):
       achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
 
   st.markdown("To see the full list of my achieveements (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
