@@ -20,6 +20,7 @@ st.set_page_config(
 def main():
   # Dark mode
   with st.sidebar:
+    st.logo("./assets/profile-pic (1).png", link="https://streamlit.io/gallery", icon_image="./assets/profile-pic (1).png")
     if st.toggle("Dark Mode", value=True) is False:
       st._config.set_option(f'theme.base', "light")
     else:
@@ -31,6 +32,7 @@ def main():
       st.session_state.clear()
       st.cache_resource.clear()
       st.rerun()
+    st.markdown("Copyright ©️ 2024 :blue[Alister Animesh Baroi.]<br>All rights reserved.", unsafe_allow_html=True)
 
   row0 = st.columns([2,4], gap="medium")
 
