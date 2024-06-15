@@ -20,7 +20,7 @@ st.set_page_config(
 def main():
   # Dark mode
   with st.sidebar:
-    st.logo("./assets/profile-pic (1).png", link="https://streamlit.io/gallery", icon_image="./assets/profile-pic (1).png")
+    # st.logo("./assets/Alister_Animesh_Baroi.png", link="", icon_image="./assets/profile-pic (1).png")
     if st.toggle("Dark Mode", value=True) is False:
       st._config.set_option(f'theme.base', "light")
     else:
@@ -38,7 +38,7 @@ def main():
 
   # Hero Section
   with row0[0]:
-     st.image("./assets/profile-pic (1).png", width=230)
+     st.image("./assets/Alister-Baroi-Profile-Pic.png", width=230)
      
   with row0[1]:
     st.header("Alister Animesh Baroi", anchor=False)
