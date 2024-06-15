@@ -2,14 +2,14 @@ import streamlit as st
 
 st._config.set_option(f'theme.base' ,"dark")
 st.set_page_config(
-    page_title="My Projects", page_icon=":page_facing_up:", layout="centered", 
+    page_title="Alister Animesh Baroi - Digital Resume", page_icon=":page_facing_up:", layout="centered", 
     # menu_items={
     #     'Get Help': None,
     #     'Report a bug': None,
     #     'About': None
     # }
 )
-st.markdown("<style>.st-emotion-cache-13ln4jf{@media only screen and (max-width: 800px) {.st-emotion-cache-13ln4jf{width: 100%; margin: 0;padding: 0 0 0 0;max-width: 100vw;}}}</style>", unsafe_allow_html=True)
+# st.markdown("<style>.st-emotion-cache-13ln4jf{@media only screen and (max-width: 800px) {.st-emotion-cache-13ln4jf{width: 100%; margin: 0;padding: 0 0 0 0;max-width: 100vw;}}}</style>", unsafe_allow_html=True)
 #     # Load css file
 # with open("./styles/main.css", "rb") as f:
 #   css = f.read()
