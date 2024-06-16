@@ -8,8 +8,8 @@ st.set_page_config(
 
 def main():
   st.title("Projects —")
-
-
+  st.write("Here are all my AI/ML, Web Development, and cloud related projects — Enjoy!!")
+  st.subheader(":red[Work in progress...]")
   # Dark mode
   with st.sidebar:
     if st.toggle("Dark Mode", value=True) is False:
