@@ -26,7 +26,7 @@ def main():
 
   st.title("Contact —")
   st.markdown(
-      """This is the :green[***Contact***] page, where you can contact me via the :green[contact form] below, or reaching out to me on my :blue[LinkedIn] profile.  
+      """This is the :green[***Contact***] page, where you can contact me via the :green[contact form] below, or by reaching out to me on my :blue[LinkedIn] profile.  
               :green[— Alister Baroi, with ♥]"""
   )
 
