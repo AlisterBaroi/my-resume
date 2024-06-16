@@ -8,15 +8,14 @@ st.set_page_config(
 
 def main():
   st.title("About —")
-  st.write("""
-          - This Web Application is made as my online resume for me to have an online space.
-          - This web app is built to have web app behavior and user interactivity in mind, thus focusing on User Interface and User Experience (UI/UX) in mind.
-          """)
+  st.write("This website is build by me :red[(Alister Baroi / Alister Animesh Baroi)], as my online resume, & as my porfolio website, to showcase coding skills & projects.")
+  st.write("This website is made with web app behavior and user interactivity in mind, thus focusing on the :green[User Interface] & :green[User Experience (UI/UX)] for elivated engagement.")
+  
   st.divider()
   streamlit_row = st.columns([3, 2])
   with streamlit_row[0]:
     st.subheader(":red[Made with Streamlit]")
-    st.write("This web application is build using :red[Streamlit], a free and open-source python web framework, build for rapidly developing and deploying data-driven web apps.")
+    st.write("This web application is build using :red[Streamlit], a free and open-source python web framework, build for rapidly developing & deploying data-driven web apps.")
     st.page_link("https://streamlit.io", label=":red[Visit Streamlit Website]")
   streamlit_row[1].image("./assets/streamlit.jpg")
   
