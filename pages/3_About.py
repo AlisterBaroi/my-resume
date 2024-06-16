@@ -27,6 +27,10 @@ def main():
       st._config.set_option(f'theme.base', "light")
     else:
       st._config.set_option(f'theme.base', "dark")
+    
+    # Refresh button  
+    if st.button("Refresh", help="Refresh page if something isn't updating accordingly", use_container_width=True):
+      st.rerun()
 
     # Clear button  
     if st.button("Clear Session", help="Clears session, cache, and cookie data", use_container_width=True):

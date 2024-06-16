@@ -5,7 +5,6 @@ st.set_page_config(
     # menu_items=None
 )
 
-
 def main():
   st.title("Projects —")
   st.write("Here are all my AI/ML, Web Development, and cloud related projects — Enjoy!!")
@@ -16,16 +15,20 @@ def main():
       st._config.set_option(f'theme.base', "light")
     else:
       st._config.set_option(f'theme.base', "dark")
+    
+    # Refresh button  
+    if st.button("Refresh", help="Refresh page if something isn't updating accordingly", use_container_width=True):
+      st.rerun()
 
     # Clear button  
     if st.button("Clear Session", help="Clears session, cache, and cookie data", use_container_width=True):
+      st._config.set_option(f'theme.base', "dark")
       st.cache_data.clear()
       st.session_state.clear()
       st.cache_resource.clear()
       st.rerun()
     st.markdown("Copyright ©️ 2024 :blue[Alister Animesh Baroi.]<br>All rights reserved.", unsafe_allow_html=True)
     
-
 
 
 if __name__ == "__main__":
