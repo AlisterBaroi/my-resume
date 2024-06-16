@@ -8,6 +8,18 @@ st.set_page_config(
 
 def main():
   st.title("About —")
+  st.write("""
+          - This Web Application is made as my online resume for me to have an online space.
+          - This web app is built to have web app behavior and user interactivity in mind, thus focusing on User Interface and User Experience (UI/UX) in mind.
+          """)
+  st.divider()
+  streamlit_row = st.columns([3, 2])
+  with streamlit_row[0]:
+    st.subheader(":red[Made using Streamlit]")
+    st.write("This web application is build using :red[Streamlit], a free and open-source python web framework, build for rapidly developing data-driven web apps.")
+    st.page_link("https://streamlit.io", label=":red[Visit Streamlit Website]")
+  streamlit_row[1].image("./assets/streamlit.jpg")
+  
 
 
   # Dark mode
