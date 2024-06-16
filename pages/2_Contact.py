@@ -26,7 +26,7 @@ def main():
 
   st.title("Contact —")
   st.markdown(
-      """This is the :green[***Contact***] page, where you can contact me via the :green[contact form] below, or by reaching out to me on my :blue[LinkedIn] profile.  
+      """This is the :green[***Contact***] page, where you can contact me via the :green[contact form] below, or by reaching out to my :blue[LinkedIn] profile.  
               :green[— Alister Baroi, with ♥]"""
   )
 
@@ -57,7 +57,7 @@ def main():
   with row[0]:
       st.subheader(":blue[User Feedback]")
       st.write(
-          "Feel free to leave your user feedbacks by clicking the button below. Share your :blue[user experience], suggested :blue[improvements] — Thank you."
+          "Feel free to leave your user feedback by clicking the button below. Share your :blue[user experience] or suggested :blue[improvements] — Thank you."
       )
       feedbacks = st.button("Leave a feedback")
       if feedbacks:
@@ -68,7 +68,7 @@ def main():
   with row[1]:
       st.subheader(":red[Report Bugs]")
       st.write(
-          "If facing any :red[bugs], :red[errors] or :red[technical issues], report them immediately by clicking the button below. I take bug these reports very seriously — Thank you."
+          "If facing any :red[bugs], :red[errors] or :red[technical issues], report them immediately by clicking the button below. I take these bug reports very seriously — Thank you."
       )
       bugs = st.button("Report a bug")
       if bugs:
