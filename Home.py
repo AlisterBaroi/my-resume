@@ -93,8 +93,8 @@ def main():
   with st.expander("Technology Concepts"):  
     st.multiselect(
       "Technology Concepts",
-      ["Microservices", "DevOps", "CI/CD", "AI", "Backend", "Data Anaalysis", "Data Science", "Machine Learning", "Software Architecture", "Frontend"],
-      ["Microservices", "DevOps", "CI/CD", "AI", "Backend", "Data Anaalysis", "Data Science", "Machine Learning", "Software Architecture", "Frontend"], disabled=False, label_visibility="collapsed")
+      ["Microservices", "DevOps", "CI/CD", "AI", "Backend", "Data Anaalysis", "Data Science", "ML", "Software Architecture", "Prompt Enfineering"],
+      ["Microservices", "DevOps", "CI/CD", "AI", "Backend", "Data Anaalysis", "Data Science", "ML", "Software Architecture", "Prompt Enfineering"], disabled=False, label_visibility="collapsed")
 
   with st.expander("Soft skills"):
     st.multiselect(
@@ -119,7 +119,7 @@ def main():
       jobcol = st.columns([1.5, 1.5, 1]) 
       jobcol[0].write(":blue[Solutions Architect]")
       jobcol[1].write(":grey[London, England, UK (Remote)]")
-      jobcol[2].write(":grey[*Mar 2024 - Present*]")
+      jobcol[2].write(":grey[*Oct 2023 - Mar 2024*]")
       st.write("""
               - Acquired Google Cloud :green[Startup Funding] as Cloud Credits to enable the company to access Google Cloud for two years at no cost,
               - Did R&D on designing, implementing, and overseeing the :green[cloud infrastructure] of the company,
@@ -231,7 +231,7 @@ def main():
   st.subheader("Achievements", anchor=False)
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2])
-    a = {"award": "Taylor's SHINE Gold Award", "type":"Recognition", "date":"08/2023", "from":"Taylor's University", "des":"Taylor's recognition of my outstanding extracurricular activities e.g. hackathons & certifications", "link":"https://google.com"} 
+    a = {"award": "Taylor's SHINE Gold Award", "type":"Recognition", "date":"08/2023", "from":"Taylor's University", "des":"Taylor's recognition of my outstanding extracurricular activities e.g. hackathons & certifications.", "link":"https://google.com"} 
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Taylor's recognition of my :green[outstanding extracurricular activities] e.g. hackathons & certifications]")
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="SHINE"):
@@ -239,7 +239,7 @@ def main():
   
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
-    a = {"award": "2nd Prize Winner", "type":"Competition", "date":"04/2022", "from":"Microsoft, FOSSASIA", "des":"Placed 2nd out of 2568 contestants, 797 finalists on FOSSASIA Cloud Skills Challenge 2022, a global competition hosted by Microsoft and FOSSASIA", "link":"https://www.linkedin.com/feed/update/urn:li:activity:6918520785208762368/"} 
+    a = {"award": "2nd Prize Winner", "type":"Competition", "date":"04/2022", "from":"Microsoft, FOSSASIA", "des":"Placed 2nd out of 2568 contestants, 797 finalists on FOSSASIA Cloud Skills Challenge 2022, a global competition hosted by Microsoft and FOSSASIA.", "link":"https://www.linkedin.com/feed/update/urn:li:activity:6918520785208762368/"} 
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Out of 2568 contestants, 797 finalists on :green[FOSSASIA Cloud Skills Challenge 2022], by Microsoft & FOSSASIA]")
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="FOSSASIA"):
@@ -247,7 +247,7 @@ def main():
   
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
-    a = {"award": "4th Place", "type":"Competition", "date":"06/2021", "from":"Taylor's University", "des":"Ranked 4th out of 73 contestants at ImagineHack2021 hackathon, a coding competition hosted by Taylor's University", "link":"https://drive.google.com/file/u/1/d/1oA8pHIJU8iYBtqyHCfHs_-Qm7p92JnWp/view"}
+    a = {"award": "4th Place", "type":"Competition", "date":"06/2021", "from":"Taylor's University", "des":"Ranked 4th out of 73 contestants at ImagineHack2021 hackathon, a coding competition hosted by Taylor's University.", "link":"https://drive.google.com/file/u/1/d/1oA8pHIJU8iYBtqyHCfHs_-Qm7p92JnWp/view"}
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Ranked 4th out of 73 contestants at :green[ImagineHack2021 hackathon], by Taylor's University]")
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="ImagineHack2021"):
@@ -255,7 +255,7 @@ def main():
   
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
-    a = {"award": "Taylor's Excellence Award", "type":"Scholarship", "date":"08/2020", "from":"Taylor's University", "des":"Got the Taylor's Excellence Award scholarship for my Bachelor program from exceptional performance during foundations", "link":None}
+    a = {"award": "Taylor's Excellence Award", "type":"Scholarship", "date":"08/2020", "from":"Taylor's University", "des":"Got the Taylor's Excellence Award scholarship for my Bachelor program from exceptional performance during foundations.", "link":None}
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Got this :green[scholarship] for my Bachelor program from exceptional performance during foundations]")
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="Excellence"):
