@@ -1,13 +1,13 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Alister Animesh Baroi - Projects", page_icon=":page_facing_up:", layout="centered", initial_sidebar_state="expanded", 
+    page_title="Alister Animesh Baroi - About", page_icon=":page_facing_up:", layout="centered", initial_sidebar_state="expanded", 
     # menu_items=None
 )
 
 
 def main():
-  st.title("My Projects")
+  st.title("About —")
 
 
   # Dark mode
@@ -23,6 +23,8 @@ def main():
       st.session_state.clear()
       st.cache_resource.clear()
       st.rerun()
+    st.markdown("Copyright ©️ 2024 :blue[Alister Animesh Baroi.]<br>All rights reserved.", unsafe_allow_html=True)
+    
 
 
 

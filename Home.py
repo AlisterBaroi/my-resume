@@ -2,7 +2,7 @@ import streamlit as st
 
 st._config.set_option(f'theme.base' ,"dark")
 st.set_page_config(
-    page_title="Alister Animesh Baroi - Digital Resume", page_icon=":page_facing_up:", layout="centered", 
+    page_title="Alister Animesh Baroi - Website", page_icon=":page_facing_up:", layout="centered", 
     # menu_items={
     #     'Get Help': None,
     #     'Report a bug': None,
@@ -225,7 +225,7 @@ def main():
     jobcol[1].write(":gray[A simple app build on top of my custom-made AI model to distinguish between cats & dogs]")
     jobcol[2].link_button(":red[View Project ➚]", url="https://cat-and-dog-classifier-5b4x24knra-uc.a.run.app/", use_container_width=True)
 
-  st.page_link("pages/Projects.py", label="To see the list of all my projects in details visit :blue[projects page]")
+  st.page_link("pages/1_Projects.py", label="To see the list of all my projects in details visit :blue[projects page]")
 
   # Achievements Section
   st.subheader("Achievements", anchor=False)
