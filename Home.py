@@ -103,7 +103,7 @@ def main():
       ["Python", "JavaScript", "Git", "YAML", "SQL", "PHP",  "C++", "Java", "Bash", "PowerShell", "HTML", "CSS"], disabled=False, label_visibility="collapsed")
   
   # Experience Section
-  st.subheader("Relavant Experience", anchor=False)
+  st.subheader("Relevant Experience", anchor=False)
   with st.expander("Read Global Consultants :gray[(*Oct 2023 - Present*)]"):
     with st.container(border=True):
       jobcol = st.columns([1.5, 1.5, 1]) 
@@ -111,9 +111,9 @@ def main():
       jobcol[1].write(":grey[London, England, UK (Remote)]")
       jobcol[2].write(":gray[*Mar 2024 - Present*]")
       st.write("""
-              - Created AI-driven APIs and systems to streamline the automated workflows which significantly increased company's internal efficiency,
-              - Built different backend microservices to connect with Google Cloud to perform variety automations for the company's internal and external operations
-              - Designed, implimented, and maintained CI/CD pipelines.
+              - Created :green[AI-driven APIs] and systems to streamline the :green[automated workflows] which significantly increased company's internal efficiency,
+              - Built different :green[backend microservices] to connect with Google Cloud to perform variety automations for the company's internal and external operations
+              - Designed, implimented, and maintained :green[CI/CD pipelines].
                """)
     with st.container(border=True):
       jobcol = st.columns([1.5, 1.5, 1]) 
@@ -122,8 +122,8 @@ def main():
       jobcol[2].write(":grey[*Oct 2023 - Mar 2024*]")
       st.write("""
               - Acquired Google Cloud :green[Startup Funding] as Cloud Credits to enable the company to access Google Cloud for two years at no cost,
-              - Did R&D on designing, implementing, and overseeing the :green[cloud infrastructure] of the company,
-              - Designed, implimented, and maintained CI/CD pipelines.
+              - Did :green[R&D] on designing, implementing, and overseeing the :green[cloud infrastructure] of the company,
+              - Designed, implimented, and maintained :green[CI/CD pipelines].
                """)
   
   with st.expander("Kambyan Network :gray[(*Aug 2022 - Jun 2023*)]"):
@@ -134,10 +134,10 @@ def main():
         jobcol[1].write(":grey[Petaling Jaya, KL, Malaysia]")
         jobcol[2].write(":grey[*Aug 2022 - Jun 2023*]")
         st.write("""
-              - Designed, built and monitored the CI/CD pipeline which reduced the company's code-to-production interval from 1 hour to 4 minutes,
-              - Monitored, analyzed, and optimized the cloud infrastructure which resulted in a 65% reduction of the daily cloud operations cost,
-              - Designed the microservice architecture, its integration with the cloud, and compliance with the SDLC and Cloud Standards,
-              - Designed, implemented, and oversaw the VPC network and the company's cloud infrastructure.
+              - Designed, built and monitored the :green[CI/CD pipelines] which reduced the company's code-to-production interval :green[from 1 hour to 4 minutes],
+              - Monitored, analyzed, and optimized the :green[cloud infrastructure] which resulted in a :green[65% reduction of the daily cloud operations cost],
+              - Designed :green[microservice architectures], its integration with the cloud, and compliance with the SDLC and Cloud Standards,
+              - Designed, implemented, and oversaw the :green[VPC network] and the company's cloud infrastructure.
                """)
   
   with st.expander("Google Developers Student Club at Taylor's University :gray[(*Oct 2021 - Oct 2022*)]"):
@@ -149,7 +149,7 @@ def main():
         jobcol[2].write(":grey[*Oct 2021 - Oct 2022*]")
         st.write("""
               - Was responsible for hosting technical events and crash courses on :green[Machine Learning], and :green[Google Cloud Platform], at the university,
-              - :green[Conducted webinars and technical events] on cloud computing fundamentals and teaching Google Cloud Platform to and junior students/newcomers.
+              - :green[Conducted webinars and technical events] on cloud computing fundamentals and teaching :green[Google Cloud Platform] to and junior students/newcomers.
                """)
   st.markdown("To see the full list of my work experience (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/experience/)", unsafe_allow_html=True)
 

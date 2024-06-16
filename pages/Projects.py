@@ -5,8 +5,10 @@ st.set_page_config(
     # menu_items=None
 )
 
+
 def main():
   st.title("My Projects")
+
 
   # Dark mode
   with st.sidebar:
