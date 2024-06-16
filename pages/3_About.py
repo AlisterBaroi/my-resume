@@ -15,7 +15,7 @@ def main():
   st.divider()
   streamlit_row = st.columns([3, 2])
   with streamlit_row[0]:
-    st.subheader(":red[Made using Streamlit]")
+    st.subheader(":red[Made with Streamlit]")
     st.write("This web application is build using :red[Streamlit], a free and open-source python web framework, build for rapidly developing data-driven web apps.")
     st.page_link("https://streamlit.io", label=":red[Visit Streamlit Website]")
   streamlit_row[1].image("./assets/streamlit.jpg")
