@@ -235,7 +235,7 @@ def main():
   st.subheader("Achievements", anchor=False)
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2])
-    a = {"award": "Taylor's SHINE Gold Award", "type":"Recognition", "date":"08/2023", "from":"Taylor's University", "des":"Taylor's recognition of my outstanding extracurricular activities e.g. hackathons & certifications.", "link":"https://google.com"} 
+    a = {"award": "Taylor's SHINE Gold Award", "type":"Recognition", "date":"08/2023", "from":"Taylor's University", "des":"Taylor's recognition of my outstanding extracurricular activities e.g. hackathons & certifications.", "link":"https://drive.google.com/file/d/1Yd-PM_xgaQU6Au_rEhYb10fablGMw5RT/view"} 
     jobcol[0].write(a["award"])
     jobcol[1].write(":gray[Taylor's recognition of my :green[outstanding extracurricular activities] e.g. hackathons & certifications]")
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="SHINE"):
