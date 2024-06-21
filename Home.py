@@ -213,6 +213,7 @@ def main():
               - :green[Subjects:] English Language, Mathematics, Chemistry, Physics, Bengali, Geography, 
               - :green[Reg. Type:] School Student
                """)
+  st.markdown("To see more details on my education (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/education/)", unsafe_allow_html=True)
 
 
   # Projects Section
