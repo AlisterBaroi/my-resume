@@ -29,6 +29,15 @@ def main():
       st.rerun()
     st.markdown("Copyright ©️ 2024 :blue[Alister Animesh Baroi.]<br>All rights reserved.", unsafe_allow_html=True)
 
+  # Project: Bookstore Inventory Management System
+  with st.container(border=True):
+    jobcol = st.columns([2.2, 5, 2]) 
+    a = {"name": "Bookstore Inventory Management System", "tech":"C++", "date":"06/2021", "platform": None, "des":"A simple inventory management system (terminal) for book stores, with the ability to add/edit/remove records of books and customer order transactions.", "link":"https://github.com/AlisterBaroi/bookstore-inventory-system", "image":"https://private-user-images.githubusercontent.com/44337842/343895418-e5311460-a465-4f56-b336-8f60d0b95d80.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk1MTE5MjEsIm5iZiI6MTcxOTUxMTYyMSwicGF0aCI6Ii80NDMzNzg0Mi8zNDM4OTU0MTgtZTUzMTE0NjAtYTQ2NS00ZjU2LWIzMzYtOGY2MGQwYjk1ZDgwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI3VDE4MDcwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg5NTFiMWNmOWNiNDllMTI0ZGU3OTZiNWE3ZDk0NGUyMmM0M2FhN2U1M2U3MDk5N2Y2ZTUwMTA5YzY3Y2Q5NWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.jo0KiD4x0f0FGdPwhkz0swFIl-VX6I4qqvmn8zyTFLA", "video":None}
+    jobcol[0].write(a["name"])
+    jobcol[1].write(f":gray[A fictional e-commerce store to showcase and sell plants and pottery accessories. :green[Date: {a['date']}]]")
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="Inventory"):
+      project(a["name"], a["date"], a["tech"], a["platform"], a["des"], a["link"], a["image"], a["video"])
+ 
   # Project: Ecommerce store
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
