@@ -50,8 +50,9 @@ def main():
              :blue[Cloud Architect, DevOps Engineer, AI Engineer, Backend Engineer]
              *Driving business success with AI-powered workflows & cloud solutions*
               """)
-    with open("./assets/Alister_Baroi_Resume.pdf", "rb") as file:
-      st.download_button(":page_facing_up: Download Resume", type="primary", data=file, file_name="Alister_Baroi_Resume.pdf", mime="application/pdf")
+    # with open("./assets/Alister_Baroi_Resume.pdf", "rb") as file:
+    st.link_button(":page_facing_up: Download Resume", url="https://drive.google.com/file/d/1LLs3UgpVucCrWV6vABog660N_gl0Dk43/view", type="primary")
+                    #  data=file, file_name="Alister_Baroi_Resume.pdf", mime="application/pdf"
 
 
 
