@@ -29,6 +29,43 @@ def main():
       st.rerun()
     st.markdown("Copyright ©️ 2024 :blue[Alister Animesh Baroi.]<br>All rights reserved.", unsafe_allow_html=True)
 
+
+  # Project: Cat & Dog Classifier
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    a = {"name": "Cat & Dog Classifier", "tech":"Python, Keras, TensorFlow, Scikit-Learn, Streamlit", "date":"11/2023", "platform": "Docker, Google Cloud Platform", "des":"A robust image classification web app, wrapped around a simple Deep Learning (Convolutional Neural Network) model that I trained with a dataset cat and dog images, that allows users to upload images of cats or dogs, and get the classification prediction, with high accuracy.", "link":"https://cat-and-dog-classifier-5b4x24knra-uc.a.run.app/", "image":"https://private-user-images.githubusercontent.com/44337842/343933322-da972ac3-c403-464a-a07e-c8151fa461da.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk1MTgwNjksIm5iZiI6MTcxOTUxNzc2OSwicGF0aCI6Ii80NDMzNzg0Mi8zNDM5MzMzMjItZGE5NzJhYzMtYzQwMy00NjRhLWEwN2UtYzgxNTFmYTQ2MWRhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI3VDE5NDkyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY0NmVlYTYwMTgzZjUzMGQ2ZDdjNzUxNTIwMmM5ZWQyMzZlNGQzOTRiOTZjNzRhMWVhYmFkMmExNjNjZjZmMDQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.X7Ml6MIhVQCZH9HfSZZCLhdVcTtRmtu2HTFKmxLNH_o", "video":None}
+    jobcol[0].write(a["name"])
+    jobcol[1].write(f":gray[A web app wrapped around an CNN model to clasify between images of cats and dogs. :green[Date: {a['date']}]]")
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="Cat&dog"):
+      project(a["name"], a["date"], a["tech"], a["platform"], a["des"], a["link"], a["image"], a["video"])
+
+  # Project: time-speaker
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    a = {"name": "Time Speaker", "tech":"Python", "date":"10/2023", "platform": None, "des":"A simple program to print time in words from numeral inputs. This is a problem from the 'Turing Coding Challenge 2020'. The challange name is 'The Time in Words' (Challenge 7).", "link":"https://github.com/AlisterBaroi/time-speaker", "image":"https://private-user-images.githubusercontent.com/44337842/273437570-5e0ef97b-1b81-459c-b3cf-b512db32ece3.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk1MTkwODksIm5iZiI6MTcxOTUxODc4OSwicGF0aCI6Ii80NDMzNzg0Mi8yNzM0Mzc1NzAtNWUwZWY5N2ItMWI4MS00NTljLWIzY2YtYjUxMmRiMzJlY2UzLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI3VDIwMDYyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI5MzE2NGEzMTk1MWVkZDBhOTQ5ZjBhMjI3YTI3M2VjMjFjYWQ3MTcwMTk5OGE4ZDI2OWFlMTRiZDRjZWU3NjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.eIRm7JfEVDJWIrXdD4BF9Au8rt8qqEgXvFjKiwqbVLQ", "video":None}
+    jobcol[0].write(a["name"])
+    jobcol[1].write(f":gray[A simple program to print time in words from numeric inputs. Build during coding challenge.  :green[Date: {a['date']}]]")
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="time-speaker"):
+      project(a["name"], a["date"], a["tech"], a["platform"], a["des"], a["link"], a["image"], a["video"])
+
+   # Project: Breast Cancer Diagnosis Predictor
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    a = {"name": "Breast Cancer Diagnosis Predictor ", "tech":"Python, Scikit-learn, Keras", "date":"02/2022", "platform": "Google Colab, Jupyter Notebook", "des":"A simple Deep Learning (Artificial Neural Network) model, trained with real breast cancer data, that can predict the outcome for breast cancer diagnosis. Built it as a semester project.", "link":"https://github.com/AlisterBaroi/breast-cancer-diagnosis-predictor", "image":"https://private-user-images.githubusercontent.com/44337842/343929947-1fd52485-99af-4e0b-a629-74a7de701695.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk1MTcyNzMsIm5iZiI6MTcxOTUxNjk3MywicGF0aCI6Ii80NDMzNzg0Mi8zNDM5Mjk5NDctMWZkNTI0ODUtOTlhZi00ZTBiLWE2MjktNzRhN2RlNzAxNjk1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI3VDE5MzYxM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBkMzVmOGRiNTVhNWNkMzMwNmM5N2YwMWM1ZmNiYTRjZTExNGY3OTdhMTc3Y2YyYWZjNTAxZjZjYjg1MzIyN2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.PdQwsdknX3AqkIH29d4yIuaiq5kLaFwF7aQXRhHFWR8", "video":None}
+    jobcol[0].write(a["name"])
+    jobcol[1].write(f":gray[A simple Deep Learning (ANN) model to predict breast cancer diagnosis. :green[Date: {a['date']}]]")
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="ANN"):
+      project(a["name"], a["date"], a["tech"], a["platform"], a["des"], a["link"], a["image"], a["video"])
+   
+  # Project: Property Consultancy Mobile App
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    a = {"name": "MyKay - Mobile App", "tech":"JavaScript, React Native", "date":"08/2021", "platform": "React Native Expo", "des":"A property consultancy mobile app, build using React Native. The main functionality of this app is the offline login system created using the Asynchronous Storage. Aside from that the app is mostly UI", "link":"https://github.com/AlisterBaroi/My-Kay", "image":"https://alisterbaroi.github.io/img/work.png", "video":None}
+    jobcol[0].write(a["name"])
+    jobcol[1].write(f":gray[A Property Consultancy Mobile App made using React Native. :green[Date: {a['date']}]]")
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="MyKay"):
+      project(a["name"], a["date"], a["tech"], a["platform"], a["des"], a["link"], a["image"], a["video"])
+
   # Project: Bookstore Inventory Management System
   with st.container(border=True):
     jobcol = st.columns([2.2, 5, 2]) 
