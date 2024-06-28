@@ -265,7 +265,7 @@ def main():
 
   st.markdown("To see the full list of my achievement (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
 
-  # components.iframe("https://raw.githubusercontent.com/AlisterBaroi/my-resume/main/google0be275124e299297.html")
+  components.iframe("https://github.com/AlisterBaroi/my-resume/blob/e3e8c57ef87e1512eca6e7b22a4100b3d461e0e3/google0be275124e299297.html")
 
 @st.experimental_dialog("Achievement", width="small")
 def achievements(item, item2, item3, item4, item5, item6):
