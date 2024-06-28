@@ -14,7 +14,6 @@ st.set_page_config(
 )
 
 def main():
-  components.html('<meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />')
   # Dark mode
   with st.sidebar:
     # st.logo("./assets/Alister_Animesh_Baroi.png", link="", icon_image="./assets/profile-pic (1).png")
@@ -66,11 +65,11 @@ def main():
   # Summary Section
   st.subheader("Summary", anchor=False)
   st.markdown(""" 
-- About 3+ years of relavant work experience,
-- 👔 Lead Cloud Architect (current job),
-- 🏆 Computer Science (Honours) graduate from Taylors University (Malaysia),
-  - 🔥 Majored in AI & minored in FinTech,
-""")
+  - About 3+ years of relavant work experience,
+  - 👔 Lead Cloud Architect (current job),
+  - 🏆 Computer Science (Honours) graduate from Taylors University (Malaysia),
+    - 🔥 Majored in AI & minored in FinTech,
+  """)
 
   # Skills Section
   st.subheader("Skills", anchor=False)
@@ -265,6 +264,8 @@ def main():
       achievements(a["award"], a["type"], a["date"], a["from"], a["des"], a["link"])
 
   st.markdown("To see the full list of my achievement (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
+
+  components.html(f'<meta name="google-site-verification" content="{st.secrets["GOOGLE_SEARCH_CONSOLE"]}" />')
 
 
 @st.experimental_dialog("Achievement", width="small")
