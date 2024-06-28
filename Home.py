@@ -283,3 +283,19 @@ def achievements(item, item2, item3, item4, item5, item6):
 
 if __name__ == "__main__":
     main()
+
+
+
+# # Potential work-around to fixing Google Search Console code integration issue
+# from pathlib import Path
+# import streamlit as st
+
+# index = Path(st.__file__).parent / "static" / "index.html"
+# html = index.read_text()
+
+# html = html.replace("<head>", """<head>
+# <meta name="description" content="Foo">
+# <meta property="og:image" content="https://example.com/bar.jpg">
+# """.replace("\n", ""))
+
+# index.write_text(html)
