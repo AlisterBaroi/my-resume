@@ -1,4 +1,7 @@
 import streamlit as st
+import streamlit.components.v1 as components
+
+
 
 st._config.set_option(f'theme.base' ,"dark")
 st.set_page_config(
@@ -9,15 +12,9 @@ st.set_page_config(
     #     'About': None
     # }
 )
-# st.markdown("<style>.st-emotion-cache-13ln4jf{@media only screen and (max-width: 800px) {.st-emotion-cache-13ln4jf{width: 100%; margin: 0;padding: 0 0 0 0;max-width: 100vw;}}}</style>", unsafe_allow_html=True)
-#     # Load css file
-# with open("./styles/main.css", "rb") as f:
-#   css = f.read()
-# st.markdown("<style>{css}</style>", unsafe_allow_html=True)
-
-
 
 def main():
+  components.html('<meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />')
   # Dark mode
   with st.sidebar:
     # st.logo("./assets/Alister_Animesh_Baroi.png", link="", icon_image="./assets/profile-pic (1).png")
