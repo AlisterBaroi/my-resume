@@ -1,7 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
-
-
 
 st._config.set_option(f'theme.base' ,"dark")
 st.set_page_config(
@@ -265,7 +262,6 @@ def main():
 
   st.markdown("To see the full list of my achievement (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
 
-  components.html(f'<meta name="google-site-verification" content="{st.secrets["GOOGLE_SEARCH_CONSOLE"]}" />')
 
 
 @st.experimental_dialog("Achievement", width="small")
