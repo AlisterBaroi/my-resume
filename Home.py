@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 
 st._config.set_option(f'theme.base' ,"dark")
 st.set_page_config(
-    page_title="Alister Animesh Baroi - Website", page_icon=":page_facing_up:", layout="centered", 
+    page_title="Alister Baroi - Online Resume", page_icon=":page_facing_up:", layout="centered", 
     # menu_items={
     #     'Get Help': None,
     #     'Report a bug': None,
