@@ -16,7 +16,7 @@ def main():
   with streamlit_row[0]:
     st.subheader(":red[Made with Streamlit]")
     st.write("This web application is build using :red[Streamlit], a free and open-source python web framework, build for rapidly developing & deploying data-driven web apps.")
-    st.page_link("https://streamlit.io", label=":red[Visit Streamlit Website]")
+    st.page_link("https://streamlit.io", label=":red[Visit Streamlit.io]")
   streamlit_row[1].image("./assets/streamlit.jpg")
   
 
