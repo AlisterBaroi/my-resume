@@ -12,7 +12,7 @@ st.set_page_config(
     #     'About': None
     # }
 )
-
+components.html("<meta name='google-site-verification' content='OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0' />")
 def main():
   # Dark mode
   with st.sidebar:
@@ -265,7 +265,6 @@ def main():
 
   st.markdown("To see the full list of my achievement (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
 
-  components.html("<meta name='google-site-verification' content='OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0' />")
   # components.iframe("https://raw.githubusercontent.com/AlisterBaroi/my-resume/main/google0be275124e299297.html")
 
 @st.experimental_dialog("Achievement", width="small")
