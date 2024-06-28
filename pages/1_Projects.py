@@ -42,7 +42,7 @@ def main():
   # Project: time-speaker
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
-    a = {"name": "Time Speaker", "tech":"Python", "date":"10/2023", "platform": None, "des":"A simple program to print time in words from numeral inputs. This is a problem from the 'Turing Coding Challenge 2020'. The challange name is 'The Time in Words' (Challenge 7).", "link":"https://github.com/AlisterBaroi/time-speaker", "image":"https://private-user-images.githubusercontent.com/44337842/273437570-5e0ef97b-1b81-459c-b3cf-b512db32ece3.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk1MTkwODksIm5iZiI6MTcxOTUxODc4OSwicGF0aCI6Ii80NDMzNzg0Mi8yNzM0Mzc1NzAtNWUwZWY5N2ItMWI4MS00NTljLWIzY2YtYjUxMmRiMzJlY2UzLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI3VDIwMDYyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI5MzE2NGEzMTk1MWVkZDBhOTQ5ZjBhMjI3YTI3M2VjMjFjYWQ3MTcwMTk5OGE4ZDI2OWFlMTRiZDRjZWU3NjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.eIRm7JfEVDJWIrXdD4BF9Au8rt8qqEgXvFjKiwqbVLQ", "video":None}
+    a = {"name": "Time Speaker", "tech":"Python", "date":"10/2023", "platform": None, "des":"A simple program to print time in words from numeral inputs. This is a problem from the 'Turing Coding Challenge 2020'. The challange name is 'The Time in Words' (Challenge 7).", "link":"https://github.com/AlisterBaroi/time-speaker", "image":"https://raw.githubusercontent.com/AlisterBaroi/time-speaker/main/img/demo.gif", "video":None}
     jobcol[0].write(a["name"])
     jobcol[1].write(f":gray[A simple program to print time in words from numeric inputs. Build during coding challenge.  :green[Date: {a['date']}]]")
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="time-speaker"):
@@ -96,7 +96,7 @@ def main():
   # Project: Netflix Clone
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
-    a = {"name": "Netflix Clone", "tech":"HTML, CSS, JavaScript, Bootstrap 4", "date":"05/2019", "platform":None, "des":"A complete bootstrap clone of the front-end of Netflix.", "link":"https://alisterbaroi.github.io/Netflix/", "image":"https://img.itch.zone/aW1nLzIyOTQxMTEucG5n/315x250%23c/Z5c6dp.png", "video":None}
+    a = {"name": "Netflix Clone", "tech":"HTML, CSS, JavaScript, Bootstrap 4", "date":"05/2019", "platform":None, "des":"A complete bootstrap clone of the front-end of Netflix.", "link":"https://alisterbaroi.github.io/Netflix/", "image":"https://raw.githubusercontent.com/AlisterBaroi/Netflix/2726b21ebad33c710f21a82542f8563afa1b8f6a/images/branding.jpeg", "video":None}
     jobcol[0].write(a["name"])
     jobcol[1].write(f":gray[A complete bootstrap clone of the front-end of Netflix. :green[Date: {a['date']}]]")
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="Netflix"):
