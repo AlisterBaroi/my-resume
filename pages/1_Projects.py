@@ -42,7 +42,7 @@ def main():
   # Project: Cat & Dog Classifier
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
-    a = {"name": "Cat & Dog Classifier", "tech":"Python, Keras, TensorFlow, Scikit-Learn, Streamlit", "date":"11/2023", "platform": "Docker, Google Cloud Platform", "des":"A robust image classification web app, wrapped around my previosuly-built Deep Learning (Convolutional Neural Network) model that I trained with a dataset cat and dog images, that allows users to upload images of cats or dogs, and get the classification prediction, with high accuracy.", "link":"https://cat-and-dog-classifier-5b4x24knra-uc.a.run.app/", "image":"https://raw.githubusercontent.com/AlisterBaroi/cat_and_dog_classifier/c011b26cadaf6047329622a6730a4a6de8ee107f/.github/workflows/demo.png", "video":None}
+    a = {"name": "Cat & Dog Classifier", "tech":"Python, Keras, TensorFlow, Scikit-Learn, Streamlit", "date":"11/2023", "platform": "Docker, Google Cloud Platform", "des":"A robust image classification web app, wrapped around my previosuly-built Deep Learning (Convolutional Neural Network) model that I trained with a dataset cat and dog images (in 2022), that allows users to upload images of cats or dogs, and get the classification prediction, with high accuracy.", "link":"https://cat-and-dog-classifier-5b4x24knra-uc.a.run.app/", "image":"https://raw.githubusercontent.com/AlisterBaroi/cat_and_dog_classifier/c011b26cadaf6047329622a6730a4a6de8ee107f/.github/workflows/demo.png", "video":None}
     jobcol[0].write(a["name"])
     jobcol[1].write(f":gray[A web app wrapped around an CNN model to clasify between images of cats and dogs. :green[Date: {a['date']}]]")
     if jobcol[2].button(":red[View Details]", use_container_width=True, key="Cat&dog"):
