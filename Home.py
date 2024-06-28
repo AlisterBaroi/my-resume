@@ -301,3 +301,4 @@ if __name__ == "__main__":
 # index.write_text(html)
 
 # https://developer.chrome.com/docs/lighthouse/seo/meta-description/?utm_source=lighthouse&utm_medium=lr
+# https://developer.mozilla.org/en-US/docs/Web/Manifest
