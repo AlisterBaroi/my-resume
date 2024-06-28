@@ -30,6 +30,15 @@ def main():
     st.markdown("Copyright ©️ 2024 :blue[Alister Animesh Baroi.]<br>All rights reserved.", unsafe_allow_html=True)
 
 
+  # Project: Resume Parser API
+  with st.container(border=True):
+    jobcol = st.columns([2, 5, 2]) 
+    a = {"name": "Resume Parser API", "tech":"Python, FastAPI, GCloud SDK", "date":"11/2023", "platform": "OpenAI, GCP DocumentAI, Google Cloud Platform", "des":"A robust image classification web app, wrapped around a simple Deep Learning (Convolutional Neural Network) model that I trained with a dataset cat and dog images, that allows users to upload images of cats or dogs, and get the classification prediction, with high accuracy.", "link":"https://resume-parser-api-2otwbg7hbq-nw.a.run.app/docs", "image":"https://private-user-images.githubusercontent.com/44337842/343933322-da972ac3-c403-464a-a07e-c8151fa461da.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk1MTgwNjksIm5iZiI6MTcxOTUxNzc2OSwicGF0aCI6Ii80NDMzNzg0Mi8zNDM5MzMzMjItZGE5NzJhYzMtYzQwMy00NjRhLWEwN2UtYzgxNTFmYTQ2MWRhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI3VDE5NDkyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY0NmVlYTYwMTgzZjUzMGQ2ZDdjNzUxNTIwMmM5ZWQyMzZlNGQzOTRiOTZjNzRhMWVhYmFkMmExNjNjZjZmMDQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.X7Ml6MIhVQCZH9HfSZZCLhdVcTtRmtu2HTFKmxLNH_o", "video":None}
+    jobcol[0].write(a["name"])
+    jobcol[1].write(f":gray[API to accept resumes, process with computer vision & LLM, & send back parsed data as JSON. :green[Date: {a['date']}]]")
+    if jobcol[2].button(":red[View Details]", use_container_width=True, key="Resume"):
+      project(a["name"], a["date"], a["tech"], a["platform"], a["des"], a["link"], a["image"], a["video"])
+  
   # Project: Cat & Dog Classifier
   with st.container(border=True):
     jobcol = st.columns([2, 5, 2]) 
