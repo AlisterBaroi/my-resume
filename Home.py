@@ -1,18 +1,11 @@
 import streamlit as st
-import streamlit.components.v1 as components
-
-
+# import streamlit.components.v1 as components
 
 st._config.set_option(f'theme.base' ,"dark")
 st.set_page_config(
-    page_title="Alister Baroi - Online Resume", page_icon=":page_facing_up:", layout="centered", 
-    # menu_items={
-    #     'Get Help': None,
-    #     'Report a bug': None,
-    #     'About': None
-    # }
-)
-components.html("<meta name='google-site-verification' content='OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0' />")
+    page_title="Alister Baroi - Online Resume", page_icon=":page_facing_up:", layout="centered")
+
+# components.html("<meta name='google-site-verification' content='OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0' />")
 def main():
   # Dark mode
   with st.sidebar:
@@ -265,7 +258,7 @@ def main():
 
   st.markdown("To see the full list of my achievement (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/)", unsafe_allow_html=True)
 
-  components.iframe("https://github.com/AlisterBaroi/my-resume/blob/e3e8c57ef87e1512eca6e7b22a4100b3d461e0e3/google0be275124e299297.html")
+  # components.iframe("https://github.com/AlisterBaroi/my-resume/blob/e3e8c57ef87e1512eca6e7b22a4100b3d461e0e3/google0be275124e299297.html")
 
 @st.experimental_dialog("Achievement", width="small")
 def achievements(item, item2, item3, item4, item5, item6):
