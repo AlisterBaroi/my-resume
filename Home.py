@@ -286,7 +286,7 @@ if __name__ == "__main__":
 
 
 
-# # Potential work-around to fixing Google Search Console code integration issue
+# # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
 # from pathlib import Path
 # import streamlit as st
 
@@ -299,3 +299,5 @@ if __name__ == "__main__":
 # """.replace("\n", ""))
 
 # index.write_text(html)
+
+# https://developer.chrome.com/docs/lighthouse/seo/meta-description/?utm_source=lighthouse&utm_medium=lr
