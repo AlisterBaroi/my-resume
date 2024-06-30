@@ -29,8 +29,8 @@ def main():
   st_dir = os.path.dirname(st.__file__)
   index_filename = os.path.join(st_dir, "static", "index.html")
 
-  tracking_code = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
-  replace_in_file(index_filename, "<head>", "<head>" + tracking_code)
+  metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
+  replace_in_file(index_filename, "<head>", "<head>" + metadata)
   print("Inserted tracking code into:", index_filename)
 
 
@@ -320,7 +320,7 @@ def replace_in_file(filename, oldvalue, newvalue):
     filedata = filedata.replace(oldvalue, newvalue)
 
     # Write the file out again
-    with open(filename, "wb") as f:
+    with open(filename, "w") as f:
         f.write(filedata)
 
 
