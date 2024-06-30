@@ -8,20 +8,22 @@ st.set_page_config(
 
 # components.html("<meta name='google-site-verification' content='OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0' />")
 def main():
+  
   # # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
-  # index = Path(st.__file__).parent / "static" / "index.html"
-  index = Path(st.__file__).parent / "index.html"
+  index = Path(st.__file__).parent / "static" / "index.html"
+  # index = Path(st.__file__).parent / "index.html"
   html = index.read_text()
-
+  st.write(html)
   html = html.replace("<head>", """<head>
   <meta name='url' content='https://alisterbaroi/streamlit.app'>
   <meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
-  """.replace("\n", ""))
-  # <meta name='copyright' content='Alister Animesh Baroi, alister.baroi@gmail.com'>
-  # <meta name="application-name" content="Alister Animesh Baroi - Portfolio Website">
-  # <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
-  # <meta name="description" content="Welcome to Alister Animesh Baroi's Digital/Online Resume, and portfolio website">
-  # <meta name="keywords" content="Alister, Alister Baroi, Alister Animesh Baroi, alisterbaroi, AlisterBaroi, AlisterAnimeshBaroi">
+  <meta name='copyright' content='Alister Animesh Baroi, alister.baroi@gmail.com'>
+  <meta name="application-name" content="Alister Animesh Baroi - Portfolio Website">
+  <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
+  <meta name="description" content="Welcome to Alister Animesh Baroi's Digital/Online Resume, and portfolio website">
+  <meta name="keywords" content="Alister, Alister Baroi, Alister Animesh Baroi, alisterbaroi, AlisterBaroi, AlisterAnimeshBaroi">
+  """)
+  # """.replace("\n", ""))
   index.write_text(html)
 
 
