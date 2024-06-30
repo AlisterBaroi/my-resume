@@ -9,7 +9,8 @@ st.set_page_config(
 # components.html("<meta name='google-site-verification' content='OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0' />")
 def main():
   # # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
-  index = Path(st.__file__).parent / "static" / "index.html"
+  # index = Path(st.__file__).parent / "static" / "index.html"
+  index = Path(st.__file__).parent / "index.html"
   html = index.read_text()
 
   html = html.replace("<head>", """<head>
