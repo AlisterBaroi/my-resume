@@ -29,7 +29,7 @@ def main():
   st_dir = os.path.dirname(st.__file__)
   index_filename = os.path.join(st_dir, "static")
 
-  shutil.copy("google0be275124e299297.html", index_filename)
+  shutil.copy2("google0be275124e299297.html", index_filename)
 
   # index_filename = os.path.join(st_dir, "static", "index.html")
   # metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
