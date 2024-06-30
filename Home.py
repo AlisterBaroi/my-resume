@@ -1,30 +1,38 @@
 import streamlit as st
 from pathlib import Path
+import os
 # import streamlit.components.v1 as components
 
 st._config.set_option('theme.base' ,"dark")
 st.set_page_config(
-    page_title="Alister Baroi - Online Resume", page_icon=":page_facing_up:", layout="centered")
+    page_title="Alister Animesh Baroi - Portfolio Website", page_icon=":page_facing_up:", layout="centered")
 
 # components.html("<meta name='google-site-verification' content='OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0' />")
 def main():
   
   # # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
-  index = Path(st.__file__).parent / "static" / "index.html"
-  # index = Path(st.__file__).parent / "index.html"
-  html = index.read_text()
-  # st.write(html)
-  html = html.replace("<head>", """<head>
-  <meta name='url' content='https://alisterbaroi/streamlit.app'>
-  <meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
-  <meta name='copyright' content='Alister Animesh Baroi, alister.baroi@gmail.com'>
-  <meta name="application-name" content="Alister Animesh Baroi - Portfolio Website">
-  <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
-  <meta name="description" content="Welcome to Alister Animesh Baroi's Digital/Online Resume, and portfolio website">
-  <meta name="keywords" content="Alister, Alister Baroi, Alister Animesh Baroi, alisterbaroi, AlisterBaroi, AlisterAnimeshBaroi">
-  """)
-  # """.replace("\n", ""))
-  index.write_text(html)
+  # index = Path(st.__file__).parent / "static" / "index.html"
+  # html = index.read_text()
+  # # st.write(html)
+  # html = html.replace("<head>", """<head>
+  # <meta name='url' content='https://alisterbaroi/streamlit.app'>
+  # <meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
+  # <meta name='copyright' content='Alister Animesh Baroi, alister.baroi@gmail.com'>
+  # <meta name="application-name" content="Alister Animesh Baroi - Portfolio Website">
+  # <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
+  # <meta name="description" content="Welcome to Alister Animesh Baroi's Digital/Online Resume, and portfolio website">
+  # <meta name="keywords" content="Alister, Alister Baroi, Alister Animesh Baroi, alisterbaroi, AlisterBaroi, AlisterAnimeshBaroi">
+  # """)
+  # # """.replace("\n", ""))
+  # index.write_text(html)
+
+  st_dir = os.path.dirname(st.__file__)
+  index_filename = os.path.join(st_dir, "static", "index.html")
+
+  tracking_code = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
+  replace_in_file(index_filename, "<head>", "<head>" + tracking_code)
+  print("Inserted tracking code into:", index_filename)
+
 
 
   # Dark mode
@@ -299,6 +307,21 @@ def achievements(item, item2, item3, item4, item5, item6):
     else:
       st.link_button(":red[View Achievement ➚]", url=item6, use_container_width=False)
 
+
+
+
+def replace_in_file(filename, oldvalue, newvalue):
+    """Replace string in a file and optionally create backup_filename."""
+    # Read in the file
+    with open(filename, "r") as f:
+        filedata = f.read()
+
+    # Replace the target string
+    filedata = filedata.replace(oldvalue, newvalue)
+
+    # Write the file out again
+    with open(filename, "w") as f:
+        f.write(filedata)
 
 
 if __name__ == "__main__":
