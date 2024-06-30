@@ -26,11 +26,13 @@ def main():
   
   
 
-  st_dir = os.path.dirname(st.__file__)
-  index_filename = os.path.join(st_dir, "static", "index.html")
+  # st_dir = os.path.dirname(st.__file__)
+  # index_filename = os.path.join(st_dir, "static", "index.html")
 
   metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
-  replace_in_file(index_filename, "<head>", "<head>" + metadata, metadata)
+  # replace_in_file(index_filename, "<head>", "<head>" + metadata, metadata)
+
+  st.html(metadata)
   
 
 
