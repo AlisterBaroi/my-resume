@@ -320,7 +320,7 @@ def replace_in_file(filename, oldvalue, newvalue):
     filedata = filedata.replace(oldvalue, newvalue)
 
     # Write the file out again
-    with open(filename, "w+") as f:
+    with open(filename, "wb") as f:
         f.write(filedata)
 
 
