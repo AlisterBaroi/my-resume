@@ -311,18 +311,18 @@ def achievements(item, item2, item3, item4, item5, item6):
       st.link_button(":red[View Achievement ➚]", url=item6, use_container_width=False)
 
 
-def replace_in_file(filename, oldvalue, newvalue):
-    """Replace string in a file and optionally create backup_filename."""
-    # Read in the file
-    with open(filename, "r") as f:
-        filedata = f.read()
+# def replace_in_file(filename, oldvalue, newvalue):
+#     """Replace string in a file and optionally create backup_filename."""
+#     # Read in the file
+#     with open(filename, "r") as f:
+#         filedata = f.read()
 
-    # Replace the target string
-    filedata = filedata.replace(oldvalue, newvalue)
+#     # Replace the target string
+#     filedata = filedata.replace(oldvalue, newvalue)
 
-    # Write the file out again
-    with open(filename, "w") as f:
-        f.write(filedata)
+#     # Write the file out again
+#     with open(filename, "w") as f:
+#         f.write(filedata)
 
 
 if __name__ == "__main__":
