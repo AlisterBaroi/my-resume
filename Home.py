@@ -1,6 +1,6 @@
 import streamlit as st
 from pathlib import Path
-import os
+import os, shutil
 # import streamlit.components.v1 as components
 
 st._config.set_option('theme.base' ,"dark")
@@ -27,11 +27,14 @@ def main():
   # index.write_text(html)
 
   st_dir = os.path.dirname(st.__file__)
-  index_filename = os.path.join(st_dir, "static", "index.html")
+  index_filename = os.path.join(st_dir, "static")
 
-  metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
-  replace_in_file(index_filename, "<head>", "<head>" + metadata)
-  print("Inserted tracking code into:", index_filename)
+  shutil.copy("google0be275124e299297.html", index_filename)
+
+  # index_filename = os.path.join(st_dir, "static", "index.html")
+  # metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
+  # replace_in_file(index_filename, "<head>", "<head>" + metadata)
+  # print("Inserted tracking code into:", index_filename)
 
 
 
