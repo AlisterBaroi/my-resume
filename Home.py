@@ -13,7 +13,7 @@ def main():
   index = Path(st.__file__).parent / "static" / "index.html"
   # index = Path(st.__file__).parent / "index.html"
   html = index.read_text()
-  st.write(html)
+  # st.write(html)
   html = html.replace("<head>", """<head>
   <meta name='url' content='https://alisterbaroi/streamlit.app'>
   <meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
