@@ -313,7 +313,7 @@ def achievements(item, item2, item3, item4, item5, item6):
     """Replace string in a file and optionally create backup_filename."""
    # # Read in the file
     # with open(filename, "r") as f:
-        filedata = f.read()
+       # filedata = f.read()
 
      # # Replace the target string
    # if findvalue not in filedata:
