@@ -309,7 +309,7 @@ def achievements(item, item2, item3, item4, item5, item6):
     else:
       st.link_button(":red[View Achievement ➚]", url=item6, use_container_width=False)
 
-'''
+/*
 def replace_in_file(filename, oldvalue, newvalue, findvalue):
     """Replace string in a file and optionally create backup_filename."""
     # Read in the file
@@ -326,7 +326,7 @@ def replace_in_file(filename, oldvalue, newvalue, findvalue):
     else:
       print("Metadata not inserted: Already exists")
 
-'''
+*/
 if __name__ == "__main__":
     main()
 
