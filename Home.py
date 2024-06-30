@@ -1,6 +1,6 @@
 import streamlit as st
 from pathlib import Path
-import os, shutil
+import os
 # import streamlit.components.v1 as components
 
 st._config.set_option('theme.base' ,"dark")
@@ -27,14 +27,11 @@ def main():
   # index.write_text(html)
 
   st_dir = os.path.dirname(st.__file__)
-  index_filename = os.path.join(st_dir, "static")
+  index_filename = os.path.join(st_dir, "static", "index.html")
 
-  shutil.copy2("google0be275124e299297.html", index_filename)
-
-  # index_filename = os.path.join(st_dir, "static", "index.html")
-  # metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
-  # replace_in_file(index_filename, "<head>", "<head>" + metadata)
-  # print("Inserted tracking code into:", index_filename)
+  metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
+  replace_in_file(index_filename, "<head>", "<head>" + metadata)
+  print("Inserted tracking code into:", index_filename)
 
 
 
@@ -311,18 +308,18 @@ def achievements(item, item2, item3, item4, item5, item6):
       st.link_button(":red[View Achievement ➚]", url=item6, use_container_width=False)
 
 
-# def replace_in_file(filename, oldvalue, newvalue):
-#     """Replace string in a file and optionally create backup_filename."""
-#     # Read in the file
-#     with open(filename, "r") as f:
-#         filedata = f.read()
+def replace_in_file(filename, oldvalue, newvalue):
+    """Replace string in a file and optionally create backup_filename."""
+    # Read in the file
+    with open(filename, "r") as f:
+        filedata = f.read()
 
-#     # Replace the target string
-#     filedata = filedata.replace(oldvalue, newvalue)
+    # Replace the target string
+    filedata = filedata.replace(oldvalue, newvalue)
 
-#     # Write the file out again
-#     with open(filename, "w") as f:
-#         f.write(filedata)
+    # Write the file out again
+    with open(filename, "w") as f:
+        f.write(filedata)
 
 
 if __name__ == "__main__":
