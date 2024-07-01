@@ -36,7 +36,8 @@ def main():
 
   form_sec = st.columns([5, 8])
   with form_sec[0]:
-     components.html("""<script src='https://platform.linkedin.com/badges/js/profile.js' type='text/javascript'></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="VERTICAL" data-vanity="alisterbaroi" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/alisterbaroi?trk=profile-badge"></a></div>""", height=330)
+     # components.html("""<script src='https://platform.linkedin.com/badges/js/profile.js' type='text/javascript'></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="VERTICAL" data-vanity="alisterbaroi" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/alisterbaroi?trk=profile-badge"></a></div>""", height=330)
+     st.html("""<script src='https://platform.linkedin.com/badges/js/profile.js' type='text/javascript'></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="VERTICAL" data-vanity="alisterbaroi" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/alisterbaroi?trk=profile-badge"></a></div>""")
   with form_sec[1]:
     with st.form(key="contact"):
       st.subheader("Contact Form —")
