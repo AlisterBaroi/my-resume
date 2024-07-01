@@ -36,7 +36,7 @@ def main():
   # replace_in_file(index_filename, "<head>", "<head>" + metadata, metadata)
 
   # st.html(metadata)
-  st.markdown(metadata)
+  st.markdown(metadata, unsafe_allow_html=True)
   
 
 
