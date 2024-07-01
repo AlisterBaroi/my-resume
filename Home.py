@@ -1,7 +1,7 @@
 import streamlit as st
 from pathlib import Path
 import os
-# import streamlit.components.v1 as components
+import streamlit.components.v1 as components
 
 st.set_page_config(
     page_title="Alister Animesh Baroi - Portfolio Website", page_icon=":page_facing_up:", layout="centered")
@@ -14,6 +14,18 @@ metadata = """<header>
 <h1 style="display: none;">Hi</h1>
 <p style="display: none;">Welcome to the website of Alister Animesh Baroi or Alister Baroi. This is Alisters online portfolio and digital resume website</p>"""
 st.markdown(metadata, unsafe_allow_html=True)
+
+google_analytics_tag = """<!-- Google tag (gtag.js) -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-P55460SGVY'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P55460SGVY');
+</script>"""
+
+components.html(google_analytics_tag)
 
 # # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
   # index = Path(st.__file__).parent / "static" / "index.html"
