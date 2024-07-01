@@ -29,7 +29,8 @@ def main():
   # st_dir = os.path.dirname(st.__file__)
   # index_filename = os.path.join(st_dir, "static", "index.html")
 
-  metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">"""
+  metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
+  <h1>Hi</h1>"""
   # replace_in_file(index_filename, "<head>", "<head>" + metadata, metadata)
 
   st.html(metadata)
@@ -310,20 +311,20 @@ def achievements(item, item2, item3, item4, item5, item6):
       st.link_button(":red[View Achievement ➚]", url=item6, use_container_width=False)
 
 # def replace_in_file(filename, oldvalue, newvalue, findvalue):
-    """Replace string in a file and optionally create backup_filename."""
-   # # Read in the file
-    # with open(filename, "r") as f:
-       # filedata = f.read()
+#     """Replace string in a file and optionally create backup_filename."""
+#    # Read in the file
+#     with open(filename, "r") as f:
+#        filedata = f.read()
 
-     # # Replace the target string
-   # if findvalue not in filedata:
-    #  filedata = filedata.replace(oldvalue, newvalue)
-      # Write the file out again
-      # with open(filename, "w") as f:
-         # f.write(filedata)
-      # print("Inserted metadata into:", filename)
-    # else:
-      # print("Metadata not inserted: Already exists")
+#      # Replace the target string
+#    if findvalue not in filedata:
+#      filedata = filedata.replace(oldvalue, newvalue)
+#       Write the file out again
+#       with open(filename, "w") as f:
+#          f.write(filedata)
+#       print("Inserted metadata into:", filename)
+#     else:
+#       print("Metadata not inserted: Already exists")
 
 
 if __name__ == "__main__":
