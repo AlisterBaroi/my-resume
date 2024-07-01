@@ -35,7 +35,8 @@ def main():
   <p style="display: none;">Welcome to the website of Alister Animesh Baroi or Alister Baroi. This is Alisters online portfolio and digital resume website</p>"""
   # replace_in_file(index_filename, "<head>", "<head>" + metadata, metadata)
 
-  st.html(metadata)
+  # st.html(metadata)
+  st.markdown(metadata)
   
 
 
