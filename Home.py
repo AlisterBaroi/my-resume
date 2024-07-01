@@ -10,10 +10,10 @@ st.set_page_config(
     page_title="Alister Animesh Baroi - Portfolio Website", page_icon=":page_facing_up:", layout="centered")
 st._config.set_option('theme.base' ,"dark")
 
-# Include Google Analytics tracking code (doesnt work)
-with open("analytics.html", "r") as f:
-    html_code = f.read()
-    components.html(html_code, height=0)
+# # Include Google Analytics tracking code (doesnt work)
+# with open("analytics.html", "r") as f:
+#     html_code = f.read()
+#     components.html(html_code, height=0)
   
 # components.iframe('analytics.html', height=1, scrolling=False)
 # components.html(r'analytics.html')
