@@ -26,7 +26,7 @@ st.markdown(metadata, unsafe_allow_html=True)
 # </script>"""
 
 # components.iframe('analytics.html', height=1, scrolling=False)
-components.html('analytics.html')
+components.html(r'analytics.html')
 
 # # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
   # index = Path(st.__file__).parent / "static" / "index.html"
