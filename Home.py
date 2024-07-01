@@ -14,7 +14,7 @@ st._config.set_option('theme.base' ,"dark")
 with open("analytics.html", "r") as f:
     html_code = f.read()
     components.html(html_code, height=0)
-
+  
 # components.iframe('analytics.html', height=1, scrolling=False)
 # components.html(r'analytics.html')
 
