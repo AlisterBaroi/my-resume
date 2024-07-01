@@ -3,14 +3,15 @@ from pathlib import Path
 import os
 import streamlit.components.v1 as components
 
+st.set_page_config(
+    page_title="Alister Animesh Baroi - Portfolio Website", page_icon=":page_facing_up:", layout="centered")
+st._config.set_option('theme.base' ,"dark")
+
 # Include Google Analytics tracking code
 with open("analytics.html", "r") as f:
     html_code = f.read()
     components.html(html_code, height=0)
 
-st.set_page_config(
-    page_title="Alister Animesh Baroi - Portfolio Website", page_icon=":page_facing_up:", layout="centered")
-st._config.set_option('theme.base' ,"dark")
 
 metadata = """<header>
 <meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
