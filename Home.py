@@ -31,7 +31,8 @@ def main():
 
   metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
   <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
-  <h1>Hi</h1>"""
+  <h1 style="visibility: hidden">Hi</h1>
+  <p style="visibility: hidden">THis is the website of Alister Animesh Baroi or Alister Baroi</p>"""
   # replace_in_file(index_filename, "<head>", "<head>" + metadata, metadata)
 
   st.html(metadata)
