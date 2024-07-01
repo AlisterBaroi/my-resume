@@ -25,27 +25,27 @@ st.markdown(metadata, unsafe_allow_html=True)
 
 
 # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
-index = Path(st.__file__).parent / "static" / "index.html"
-# os.chmod(index, 0o777)
-html = index.read_text()
-st.write(html)
-metadata = """<meta name='url' content='https://alisterbaroi/streamlit.app'>
-<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
-<meta name='copyright' content='Alister Animesh Baroi, alister.baroi@gmail.com'>
-<meta name="application-name" content="Alister Animesh Baroi - Portfolio Website">
-<meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
-<meta name="description" content="Welcome to Alister Animesh Baroi's Digital/Online Resume, and portfolio website">
-<meta name="keywords" content="Alister, Alister Baroi, Alister Animesh Baroi, alisterbaroi, AlisterBaroi, AlisterAnimeshBaroi">"""
+# index = Path(st.__file__).parent / "static" / "index.html"
+# # os.chmod(index, 0o777)
+# html = index.read_text()
+# st.write(html)
+# metadata = """<meta name='url' content='https://alisterbaroi/streamlit.app'>
+# <meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
+# <meta name='copyright' content='Alister Animesh Baroi, alister.baroi@gmail.com'>
+# <meta name="application-name" content="Alister Animesh Baroi - Portfolio Website">
+# <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
+# <meta name="description" content="Welcome to Alister Animesh Baroi's Digital/Online Resume, and portfolio website">
+# <meta name="keywords" content="Alister, Alister Baroi, Alister Animesh Baroi, alisterbaroi, AlisterBaroi, AlisterAnimeshBaroi">"""
 
-# Replace the target string
-if metadata not in html:
-  html = html.replace("<head>", "<head>" + metadata)
-  # Write the file out again
-  with open(index, "w+") as f:
-    f.write(html)
-    print("Inserted metadata into:", index)
-else:
-  print("Metadata not inserted: Already exists")
+# # Replace the target string
+# if metadata not in html:
+#   html = html.replace("<head>", "<head>" + metadata)
+#   # Write the file out again
+#   with open(index, "w+") as f:
+#     f.write(html)
+#     print("Inserted metadata into:", index)
+# else:
+#   print("Metadata not inserted: Already exists")
 
 
 def main():
