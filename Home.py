@@ -15,17 +15,17 @@ metadata = """<header>
 <p style="display: none;">Welcome to the website of Alister Animesh Baroi or Alister Baroi. This is Alisters online portfolio and digital resume website</p>"""
 st.markdown(metadata, unsafe_allow_html=True)
 
-google_analytics_tag = """<!-- Google tag (gtag.js) -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=G-P55460SGVY'></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+# google_analytics_tag = """<!-- Google tag (gtag.js) -->
+# <script async src='https://www.googletagmanager.com/gtag/js?id=G-P55460SGVY'></script>
+# <script>
+#   window.dataLayer = window.dataLayer || [];
+#   function gtag(){dataLayer.push(arguments);}
+#   gtag('js', new Date());
 
-  gtag('config', 'G-P55460SGVY');
-</script>"""
+#   gtag('config', 'G-P55460SGVY');
+# </script>"""
 
-components.html(google_analytics_tag)
+components.iframe('https://raw.githubusercontent.com/AlisterBaroi/my-resume/main/analytics.html', height=1, scrolling=False)
 
 # # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
   # index = Path(st.__file__).parent / "static" / "index.html"
