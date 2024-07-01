@@ -7,10 +7,12 @@ st.set_page_config(
     page_title="Alister Animesh Baroi - Portfolio Website", page_icon=":page_facing_up:", layout="centered")
 st._config.set_option('theme.base' ,"dark")
 
-metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
-  <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
-  <h1 style="display: none;">Hi</h1>
-  <p style="display: none;">Welcome to the website of Alister Animesh Baroi or Alister Baroi. This is Alisters online portfolio and digital resume website</p>"""
+metadata = """<header>
+<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
+<meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
+</header>
+<h1 style="display: none;">Hi</h1>
+<p style="display: none;">Welcome to the website of Alister Animesh Baroi or Alister Baroi. This is Alisters online portfolio and digital resume website</p>"""
 st.markdown(metadata, unsafe_allow_html=True)
 
 # # Potential work-around to fixing Google Search Console code integration issue (https://github.com/streamlit/streamlit/issues/6567#issuecomment-2143512104)
