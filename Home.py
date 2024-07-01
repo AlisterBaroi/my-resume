@@ -30,6 +30,7 @@ def main():
   # index_filename = os.path.join(st_dir, "static", "index.html")
 
   metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
+  <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
   <h1>Hi</h1>"""
   # replace_in_file(index_filename, "<head>", "<head>" + metadata, metadata)
 
