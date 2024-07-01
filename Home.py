@@ -3,6 +3,12 @@ from pathlib import Path
 import os
 # import streamlit.components.v1 as components
 
+metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
+  <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
+  <h1 style="display: none;">Hi</h1>
+  <p style="display: none;">Welcome to the website of Alister Animesh Baroi or Alister Baroi. This is Alisters online portfolio and digital resume website</p>"""
+st.markdown(metadata, unsafe_allow_html=True)
+
 st._config.set_option('theme.base' ,"dark")
 st.set_page_config(
     page_title="Alister Animesh Baroi - Portfolio Website", page_icon=":page_facing_up:", layout="centered")
@@ -29,14 +35,14 @@ def main():
   # st_dir = os.path.dirname(st.__file__)
   # index_filename = os.path.join(st_dir, "static", "index.html")
 
-  metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
-  <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
-  <h1 style="display: none;">Hi</h1>
-  <p style="display: none;">Welcome to the website of Alister Animesh Baroi or Alister Baroi. This is Alisters online portfolio and digital resume website</p>"""
+  # metadata = """<meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
+  # <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
+  # <h1 style="display: none;">Hi</h1>
+  # <p style="display: none;">Welcome to the website of Alister Animesh Baroi or Alister Baroi. This is Alisters online portfolio and digital resume website</p>"""
   # replace_in_file(index_filename, "<head>", "<head>" + metadata, metadata)
 
   # st.html(metadata)
-  st.markdown(metadata, unsafe_allow_html=True)
+  # st.markdown(metadata, unsafe_allow_html=True)
   
 
 
