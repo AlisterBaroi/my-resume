@@ -41,7 +41,7 @@ metadata = """<meta name='url' content='https://alisterbaroi/streamlit.app'>
 if metadata not in html:
   html = html.replace("<head>", "<head>" + metadata)
   # Write the file out again
-  with open(index, "w") as f:
+  with open(index, "w+") as f:
     f.write(html)
     print("Inserted metadata into:", index)
 else:
